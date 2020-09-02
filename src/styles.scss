@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300&display=swap');
+$primary: #37792f;
+//$font-family-base: 'Oswald', sans-serif;
+$font-family-base: 'Manrope', sans-serif;
+$headings-font-family: 'Jost', sans-serif;
+
+$dark-theme-bg: #1b1b1b;
+$dark-theme-card-bg: #3a3a3a;
+$dark-theme-button-bg: #ccd5de;
+
+//$body-bg: #a9a9a9;
+//$body-color: #fff;
+@import "~bootstrap/scss/bootstrap";
+@import "@fortawesome/fontawesome-free/css/all.min.css";
+
+html {
+  scroll-behavior: smooth;
+}
+
+.main-face {
+    padding-top: 100%;
+    position: relative;
+
+    border-radius: 50%;
+    background: url('../img/face(500x500).png');
+    background-position: center center;
+    background-size: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+}
+
+@media (max-width: 575px) {
+    .main-face {
+        padding-top: 50%;
+        width: 200px;
+    }
+}
+@media (max-width: 388px) {
+    .main-face {
+        padding-top: 70%;
+        width: 200px;
+    }
+}
+
+.navbar {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+hr {
+    height: 1px;
+    color: #37792f;
+    background-color: #37792f;
+    border: none;
+}
+
+.first-row {
+    margin-top: 20px;
+}
+
+.logo-icon {
+    width: 52px;
+    margin-right: 12px;
+    border-radius: 9px;
+    border: 1px solid #c3c3c3;
+}
+
+a.anchor {
+    display: block;
+    position: relative;
+    top: -50px;
+    visibility: hidden;
+}
+
+.playmarket-badge img {
+    width: 170px;
+}
+
+
+.dark-theme-toggle-wrapper {
+    .night-mode-icon {
+        font-size: 15px;
+        right: -18px;
+        top: 11px;
+        color: $secondary;
+    }
+    .day-mode-icon {
+        font-size: 16px;
+        left: -19px;
+        top: 11px;
+        color: $secondary;
+    }
+    a {
+        font-size: 25px;
+    }
+}
+.dark-theme {
+    color: #fff;
+    background-color: $dark-theme-bg;
+
+    td, th {
+        color: #fff;
+    }
+
+    .navbar-light .navbar-brand,
+    .nav-link,
+    pre
+    {
+        color: #fff !important;
+    }
+    .bg-light {
+        background-color: $dark-theme-bg !important;
+    }
+
+    .card {
+        background-color: $dark-theme-card-bg !important;
+    }
+
+    .btn-dark {
+        background-color: #fff;//$dark-theme-button-bg;
+        color: #000 !important;
+    }
+    .navbar-toggler {
+        background-color: #fff;
+    }
+}
+
+.list-group.social-icons {
+    .list-group-item {
+        padding: 0 6px;
+        a {
+            font-size: 28px;
+        }
+    }
+}
