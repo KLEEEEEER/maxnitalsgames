@@ -30,6 +30,23 @@ html {
     background-repeat: no-repeat;
 }
 
+@media (max-width: 991px) {
+    .qr-code {
+        display: none;
+    }
+}
+
+@media (min-width: 991px) {
+    .qr-code {
+        position: absolute;
+        margin: auto;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+}
+
 @media (max-width: 575px) {
     .main-face {
         padding-top: 50%;
