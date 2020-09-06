@@ -155,3 +155,13 @@ a.anchor {
         }
     }
 }
+
+.carousel-item {
+    img {
+        max-height: 220px;
+    }
+}
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    background-color: #616161;
+    border-radius: 60%;
+}
