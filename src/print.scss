@@ -1,0 +1,29 @@
+@media print {
+    .dark-theme {
+        color: #000 !important;
+        td, th {
+            color: #000 !important;
+        }
+    }
+
+    .main-face-print-wrapper {
+        text-align: right;
+
+        .main-face-print {
+            width: 150px;
+            height: 150px;
+        }
+    }
+
+    .page-break-after {
+        page-break-after: always;
+    }
+
+    .navbar {
+        display: none;
+    }
+
+    ul.social-icons {
+        display: none;
+    }
+}

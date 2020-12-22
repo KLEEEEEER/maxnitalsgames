@@ -96,11 +96,11 @@
         </nav>
         <div class="container">
             <div class="row first-row">
-                <div class="col-md-2 col-lg-3"></div>
-                <div class="col-12 col-sm-6 col-md-4 col-lg-2 d-flex justify-content-md-end justify-content-center">
+                <div class="col-md-2 col-lg-3 d-print-none"></div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-2 d-flex justify-content-md-end justify-content-center d-print-none">
                     <div class="main-face float-md-right float-sm-none"></div>
                 </div>
-                <div class="col-12 col-sm-6 col-md-4 col-lg-4 justify-content-md-end justify-content-center align-items-center">
+                <div class="col-12 col-sm-6 col-md-4 col-lg-4 justify-content-md-end justify-content-center align-items-center d-print-none">
                     <h2>Привет,<h2>
                     <h4>меня зовут Максим Сластин.</h4>
                     <p>Я разработчик компьютерных и мобильных игр, а также веб-приложений и сайтов.</p>
@@ -115,9 +115,26 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-md-6"></div>
+                <div class="d-none col-8 col-sm-6 col-md-4 col-lg-4 justify-content-md-end justify-content-center d-print-inline-block">
+                    <p class="font-weight-bold h4">Сластин Максим Владимирович</p>
+                    <p><strong>Дата рождения:</strong> 10.03.1995 г.<br>
+                    <strong>Гражданство:</strong> Россия <br>
+                    Благовещенск, Амурская область<br>
+                    <strong>Желаемая должность:</strong> Unity-разработчик (Junior)<br>
+                    <strong>Желаемый уровень дохода:</strong> 40 тыс. рублей<br><br>
+                    <strong>Контактная информация:</strong><br>
+                    E-mail: <a href="mailto:maxnitals@yandex.ru" target="_blank">maxnitals@yandex.ru</a><br>
+                    Telegram: <a href="https://t.me/kleeeeeer" target="_blank">https://t.me/kleeeeeer</a><br>
+                    Vk: <a href="https://vk.com/maxnitals" target="_blank">https://vk.com/maxnitals</a>
+                    </p>
+                </div>
+                <div class="col-4 d-none d-print-inline-block main-face-print-wrapper">
+                    <img class="main-face-print" src="./dist/img/face(500x500).png">
+                </div>
+
+                <div class="col-md-6 d-print-none"></div>
             </div>
-            <div class="row mt-3">
+            <div class="row mt-3 d-print-none">
                 <div class="col-md-2"></div>
                 <div class="col-md-8">
                     <p>Участвовать в разработке игр, которые приносят удовольствие людям - моя страсть. Делать это в хорошей команде ещё интереснее. Поэтому, если у вас есть предложения по работе или вы просто хотите задать вопрос - отправляйте сообщение на мой ящик <a href="mailto:maxnitals@yandex.ru">maxnitals@yandex.ru</a> или телеграм <a href="https://t.me/kleeeeeer" target="_blank">https://t.me/kleeeeeer</a></p>
@@ -125,14 +142,14 @@
                 <div class="col-md-2"></div>
             </div>
             <a class="anchor" name="background"></a>
-            <div class="row">
+            <div class="row d-print-none">
                 <div class="col-md-2"></div>
                 <div class="col-md-8">
                     <hr>
                 </div>
                 <div class="col-md-2"></div>
             </div>
-            <div class="row">
+            <div class="row d-print-none">
                 <div class="col-md-2"></div>
                 <div class="col-md-8">
                     <h2 class="mb-4">Бэкграунд</h2>
@@ -151,34 +168,50 @@
                 </div>
                 <div class="col-md-2"></div>
             </div>
-            <div class="row">
+            <div class="row d-none d-print-block">
+                <div class="col-md-2"></div>
+                <div class="col-md-8">
+                    <h2 class="mb-4">Основные навыки:</h2>
+                    <ul>
+                        <li>Владение языками C#, PHP, JS, C++, HTML5, CSS/SASS</li>
+                        <li>Опыт работы с Unity, Xamarin, DOTS, Laravel, Vue</li>
+                        <li>Git, Trello, Npm, Composer, Adobe Photoshop, FL Studio</li>
+                    </ul>
+                    <h5>Иностранные языки:</h3>
+                    <ul>
+                        <li>Английский (На уровне чтения документации)</li>
+                    </ul>
+                </div>
+                <div class="col-md-2"></div>
+            </div>
+            <div class="row page-break-after">
                 <div class="col-md-2"></div>
                 <div class="col-md-8">
                     <h2 class="mb-4">Опыт работы</h2>
                     <div class="card mb-2">
                       <div class="card-body">
                         <h6 class="card-subtitle mb-2 text-muted">Ноябрь 2019 — Настоящее время</h6>
-                        <p class="card-text">Разработка собственных проектов (Примеры <a href="#projects">ниже</a>)</p>
+                        <p class="card-text">Участие в геймджемах и разработка собственных проектов <span class="d-print-none">(Примеры <a href="#projects">ниже</a>)</span></p>
                       </div>
                     </div>
                     <div class="card mb-2">
                       <div class="card-body">
                         <h5 class="card-title">ООО "Альматрос"</h5>
                         <h6 class="card-subtitle mb-2 text-muted">Март 2017 — Ноябрь 2019</h6>
-                        <p class="card-text">Разработка веб-приложений, поддержка клиентских сайтов, написание кастомных плагинов, доработка функционала на сайтах</p>
+                        <p class="card-text">Разработка веб-приложений, поддержка клиентских проектов, разработка различных решений на клиентских проектах, разработка решений для автоматизации внутренних операций в компании.<br><strong>Рекомендация с места работы:</strong> <a href="">Файл</a></p>
                       </div>
                     </div>
                     <div class="card">
                       <div class="card-body">
                         <h5 class="card-title">ООО "Инифинитум групп"</h5>
                         <h6 class="card-subtitle mb-2 text-muted">Сентябрь 2016 — Январь 2017</h6>
-                        <p class="card-text">Разработка телеграм-ботов, доработка существующих сайтов, поиск ошибок в работе сайтов, разработка узко-направленных визуальных плагинов.</p>
+                        <p class="card-text">Разработка телеграм-ботов, доработка клиентских проектов, исправление ошибок в работе клиентских проектов, разработка узко-направленных плагинов.</p>
                       </div>
                     </div>
                 </div>
                 <div class="col-md-2"></div>
             </div>
-            <a class="anchor" name="skills"></a>
+
             <div class="row">
                 <div class="col-md-2"></div>
                 <div class="col-md-8">
@@ -187,6 +220,29 @@
                 <div class="col-md-2"></div>
             </div>
             <div class="row">
+                <div class="col-md-2"></div>
+                <div class="col-md-8">
+                    <h2 class="mb-4">Образование</h2>
+                    <div class="card mb-2">
+                      <div class="card-body">
+                        <h5 class="card-title">Амурский Государственный Университет</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Дневная/Очная форма, 2016</h6>
+                        <p class="card-text"><strong>Факультет:</strong> Математики и Информатики.<br><strong>Специальность:</strong> Прикладная информатика в дизайне.</p>
+                      </div>
+                    </div>
+                </div>
+                <div class="col-md-2"></div>
+            </div>
+
+            <a class="anchor" name="skills"></a>
+            <div class="row">
+                <div class="col-md-2"></div>
+                <div class="col-md-8">
+                    <hr>
+                </div>
+                <div class="col-md-2"></div>
+            </div>
+            <div class="row d-print-none">
                 <div class="col-md-2"></div>
                 <div class="col-md-8">
                     <h2 class="mb-4">Навыки</h2>
@@ -237,9 +293,9 @@
                 <div class="col-md-2"></div>
             </div>
 
-            <a class="anchor" name="gamejams"></a>
+            <a class="anchor d-print-none" name="gamejams"></a>
 
-            <div class="row">
+            <div class="row d-print-none">
                 <div class="col-md-2"></div>
                 <div class="col-md-8">
                     <hr>
@@ -247,7 +303,7 @@
                 <div class="col-md-2"></div>
             </div>
 
-            <div class="row">
+            <div class="row d-print-none">
                 <div class="col-md-2"></div>
                 <div class="col-md-8">
                     <h2 class="mb-4">Геймджемы</h2>
@@ -391,15 +447,15 @@
 
 
 
-            <a class="anchor" name="projects"></a>
-            <div class="row">
+            <a class="anchor d-print-none" name="projects d-print-none"></a>
+            <div class="row d-print-none">
                 <div class="col-md-2"></div>
                 <div class="col-md-8">
                     <hr>
                 </div>
                 <div class="col-md-2"></div>
             </div>
-            <div class="row">
+            <div class="row d-print-none">
                 <div class="col-md-2"></div>
                 <div class="col-md-8">
                     <h2 class="mb-4">Личные проекты</h2>
@@ -560,15 +616,15 @@
                 <div class="col-md-2"></div>
             </div>
 
-            <a class="anchor" name="info"></a>
-            <div class="row">
+            <a class="anchor d-print-none" name="info"></a>
+            <div class="row d-print-none">
                 <div class="col-md-2"></div>
                 <div class="col-md-8">
                     <hr>
                 </div>
                 <div class="col-md-2"></div>
             </div>
-            <div class="row">
+            <div class="row d-print-none">
                 <div class="col-md-2"></div>
                 <div class="col-md-4 col-sm-12">
                     <h2 class="mb-4">Контакты</h2>
@@ -584,6 +640,61 @@
                 </div>
                 <div class="col-lg-1 col-md-12 col-sm-12 mb-2 d-flex justify-content-center"><a href="#top" class="btn btn-primary">↑ Наверх</a></div>
                 <div class="col-md-2"></div>
+            </div>
+            <div class="row d-none d-print-block">
+                <div class="col-md-2"></div>
+                <div class="col-md-8">
+                    <h2 class="mb-4">О себе:</h2>
+                    <p>
+                        Люблю игры, люблю делать игры, поэтому увлекаюсь так же многими смежными областями такими как: 3д моделирование, анимация, создание музыки и видео-монтаж.
+                        Могу уверенно назвать себя трудолюбивым и ответственным человеком.
+                    </p>
+                </div>
+                <div class="col-md-2"></div>
+            </div>
+
+            <div class="row d-none d-print-block">
+                <div class="col-md-2"></div>
+                <div class="col-md-8">
+                    <hr>
+                </div>
+                <div class="col-md-2"></div>
+            </div>
+            <div class="row d-none d-print-block">
+                <div class="col-md-2"></div>
+                <div class="col-md-8">
+                    <h2 class="mb-4">Участие в проектах:</h2>
+                    <div class="row">
+                        <div class="card mb-2 col-4">
+                          <img class="card-img-top" src="dist/img/mindescape2.png" alt="Card image cap">
+                          <div class="card-body">
+                            <h5 class="card-title">Mind Escape (Народный джем)</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Unity / C#</h6>
+                            <p class="card-text">Второе место в номинации "Визуальный минимализм"</p>
+                          </div>
+                        </div>
+                        <div class="card mb-2 col-4">
+                          <img class="card-img-top" src="dist/img/Devoured2.jpg" alt="Card image cap">
+                          <div class="card-body">
+                            <h5 class="card-title">Devoured (Ludum Dare 47)</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Unity / C#</h6>
+                            <p class="card-text">Игра сделана в команде из 5 человек. Победа в номинации "гейм-дизайн" на Digital Media Art Fest</p>
+                          </div>
+                        </div>
+                        <div class="card mb-2 col-4">
+                          <img class="card-img-top" src="dist/img/heyescape2.png" alt="Card image cap">
+                          <div class="card-body">
+                            <h5 class="card-title">Hey!Escape</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Unity / C#</h6>
+                            <p class="card-text">Личный проект. Всегда хотел попробовать сделать 2D Stealth платформер.</p>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2"></div>
+            </div>
+            <div class="row">
+                <div class="col-md-12"><br><p>Другие проекты и более подробная информация на <a href="https://kleeeeeer.github.io/maxnitalsgames/">https://kleeeeeer.github.io/maxnitalsgames/</a></p></div>
             </div>
         </div>
     </body>

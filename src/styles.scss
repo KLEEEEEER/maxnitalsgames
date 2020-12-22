@@ -13,6 +13,7 @@ $dark-theme-button-bg: #ccd5de;
 //$body-color: #fff;
 @import "~bootstrap/scss/bootstrap";
 @import "@fortawesome/fontawesome-free/css/all.min.css";
+@import "print";
 
 html {
   scroll-behavior: smooth;
