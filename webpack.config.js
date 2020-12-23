@@ -1,6 +1,8 @@
 const path = require('path');
+const fs = require('fs');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   entry: {//['./src/index.js', './src/styles.scss'],
@@ -12,6 +14,10 @@ module.exports = {
   },
   module: {
       rules: [
+          {
+              test: /\.pug$/,
+              use: ['pug-loader']
+          },
           {
             test: /\.(scss|png|jpe?g)$/,
             // use: [{
@@ -49,5 +55,14 @@ module.exports = {
             { from: './node_modules/@fortawesome/fontawesome-free/webfonts', to: './webfonts'}
         ],
     }),
+    new HtmlWebpackPlugin({
+      template: path.join(__dirname, './src/pug/index.pug'),
+      filename: path.join(__dirname, './index.html'),
+      templateParameters: {
+          "maininfo": require("./src/data/maininfo.json"),
+          "darkThemeScript": fs.readFileSync("./src/scripts/CheckDarkTheme.js", 'utf-8')
+      },
+      inject: false,
+    })
   ],
 };
