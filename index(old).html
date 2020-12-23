@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <link rel="stylesheet" href="dist/css/styles.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="utf-8">
+
+        <meta property="og:title" content="Портфолио - Максим Сластин">
+        <meta property="og:site_name" content="Max Nitals Games">
+        <meta property="og:url" content="https://kleeeeeer.github.io/maxnitalsgames">
+        <meta property="og:description" content="Разработчик игр и веб-приложений">
+        <meta property="og:image" content="https://kleeeeeer.github.io/maxnitalsgames/dist/img/face(500x500).png">
+        <link rel="icon" href="dist/img/face(500x500).png">
+
+        <title>Портфолио - Максим Сластин</title>
+    </head>
+    <body id="main_body">
+        <a class="anchor" name="top"></a>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse d-lg-flex justify-content-lg-center" id="navbarNavDropdown">
+            <ul class="navbar-nav pl-2">
+              <li class="nav-item active">
+                <a class="nav-link" href="#background">Бэкграунд</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#experience">Опыт работы</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#skills">Навыки</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#projects">Проекты</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#gamejams">Геймджемы</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#info">Контакты</a>
+              </li>
+              <li class="nav-item">
+                  <div class="position-relative d-inline-block dark-theme-toggle-wrapper ml-5">
+                      <i class="fas fa-sun position-absolute day-mode-icon"></i>
+                      <a href="#" id="dark_theme_toggle_off" target="_blank"><i class="fas fa-toggle-off"></i></a>
+                      <a href="#" id="dark_theme_toggle_on" target="_blank"><i class="fas fa-toggle-on"></i></a>
+                      <i class="fas fa-moon position-absolute night-mode-icon"></i>
+                  </div>
+              </li>
+            </ul>
+          </div>
+
+                        <script>
+                            // Dark theme
+                            function checkDarkTheme()
+                            {
+                                if (localStorage.getItem('dark_theme') == "1")
+                                {
+                                    dark_theme_toggle_button_on.style.display = "inline-block";
+                                    dark_theme_toggle_button_off.style.display = "none";
+                                    main_body.classList.add("dark-theme");
+                                }
+                                else
+                                {
+                                    dark_theme_toggle_button_on.style.display = "none";
+                                    dark_theme_toggle_button_off.style.display = "inline-block";
+                                    main_body.classList.remove("dark-theme");
+                                }
+                            }
+                            function setOnDarkTheme(event)
+                            {
+                                event.preventDefault();
+                                console.log("setOnDarkTheme");
+                                localStorage.setItem('dark_theme', "1");
+                                checkDarkTheme();
+                            }
+                            function setOffDarkTheme(event)
+                            {
+                                event.preventDefault();
+                                console.log("setOffDarkTheme");
+                                localStorage.setItem('dark_theme', "0");
+                                checkDarkTheme();
+                            }
+
+                            let dark_theme_toggle_button_on = document.getElementById("dark_theme_toggle_on");
+                            let dark_theme_toggle_button_off = document.getElementById("dark_theme_toggle_off");
+                            let main_body = document.getElementById("main_body");
+
+                            dark_theme_toggle_button_on.addEventListener("click", setOffDarkTheme);
+                            dark_theme_toggle_button_off.addEventListener("click", setOnDarkTheme);
+
+                            checkDarkTheme();
+                        </script>
+
+        </nav>
+        <div class="container">
+            <div class="row first-row">
+                <div class="col-md-2 col-lg-3 d-print-none"></div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-2 d-flex justify-content-md-end justify-content-center d-print-none">
+                    <div class="main-face float-md-right float-sm-none"></div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-4 justify-content-md-end justify-content-center align-items-center d-print-none">
+                    <h2>Привет,<h2>
+                    <h4>меня зовут Максим Сластин.</h4>
+                    <p>Я разработчик компьютерных и мобильных игр, а также веб-приложений и сайтов.</p>
+                    <div class="d-flex justify-content-md-start justify-content-center">
+                        <ul class="list-group list-group-horizontal social-icons">
+                            <li class="list-group-item"><a href="https://github.com/KLEEEEEER" target="_blank"><i class="fab fa-github" data-html="true" data-toggle="tooltip" data-placement="top" title="Github <i class='fas fa-external-link-alt'></i>"></i></a></li>
+                            <li class="list-group-item"><a href="https://play.google.com/store/apps/developer?id=Max+Nitals" target="_blank"><i class="fab fa-google-play" data-html="true" data-toggle="tooltip" data-placement="top" title="Play market <i class='fas fa-external-link-alt'></i>"></i></a></li>
+                            <li class="list-group-item"><a href="https://maxnitals.itch.io/" target="_blank"><i class="fab fa-itch-io" data-html="true" data-toggle="tooltip" data-placement="top" title="Itch.io <i class='fas fa-external-link-alt'></i>"></i></a></li>
+                            <li class="list-group-item"><a href="https://t.me/kleeeeeer" target="_blank"><i class="fab fa-telegram-plane" data-html="true" data-toggle="tooltip" data-placement="top" title="Telegram <i class='fas fa-external-link-alt'></i>"></i></a></li>
+                            <li class="list-group-item"><a href="https://vk.com/maxnitals" target="_blank"><i class="fab fa-vk" data-html="true" data-toggle="tooltip" data-placement="top" title="Вконтакте <i class='fas fa-external-link-alt'></i>"></i></a></li>
+                            <li class="list-group-item"><a href="mailto:maxnitals@yandex.ru" target="_blank"><i class="fas fa-at" data-html="true" data-toggle="tooltip" data-placement="top" title="Почта <i class='fas fa-external-link-alt'></i>"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="d-none col-8 col-sm-6 col-md-4 col-lg-4 justify-content-md-end justify-content-center d-print-inline-block">
+                    <p class="font-weight-bold h4">Сластин Максим Владимирович</p>
+                    <p><strong>Дата рождения:</strong> 10.03.1995 г.<br>
+                    <strong>Гражданство:</strong> Россия <br>
+                    Благовещенск, Амурская область<br>
+                    <strong>Желаемая должность:</strong> Unity-разработчик (Junior)<br>
+                    <strong>Желаемый уровень дохода:</strong> 40 тыс. рублей<br><br>
+                    <strong>Контактная информация:</strong><br>
+                    E-mail: <a href="mailto:maxnitals@yandex.ru" target="_blank">maxnitals@yandex.ru</a><br>
+                    Telegram: <a href="https://t.me/kleeeeeer" target="_blank">https://t.me/kleeeeeer</a><br>
+                    Vk: <a href="https://vk.com/maxnitals" target="_blank">https://vk.com/maxnitals</a>
+                    </p>
+                </div>
+                <div class="col-4 d-none d-print-inline-block main-face-print-wrapper">
+                    <img class="main-face-print" src="./dist/img/face(500x500).png">
+                </div>
+
+                <div class="col-md-6 d-print-none"></div>
+            </div>
+            <div class="row mt-3 d-print-none">
+                <div class="col-md-2"></div>
+                <div class="col-md-8">
+                    <p>Участвовать в разработке игр, которые приносят удовольствие людям - моя страсть. Делать это в хорошей команде ещё интереснее. Поэтому, если у вас есть предложения по работе или вы просто хотите задать вопрос - отправляйте сообщение на мой ящик <a href="mailto:maxnitals@yandex.ru">maxnitals@yandex.ru</a> или телеграм <a href="https://t.me/kleeeeeer" target="_blank">https://t.me/kleeeeeer</a></p>
+                </div>
+                <div class="col-md-2"></div>
+            </div>
+            <a class="anchor" name="background"></a>
+            <div class="row d-print-none">
+                <div class="col-md-2"></div>
+                <div class="col-md-8">
+                    <hr>
+                </div>
+                <div class="col-md-2"></div>
+            </div>
+            <div class="row d-print-none">
+                <div class="col-md-2"></div>
+                <div class="col-md-8">
+                    <h2 class="mb-4">Бэкграунд</h2>
+                    <p>После получения высшего образования по специальности "Программирование в дизайне", я работал веб-программистом. Помимо настройки серверов и написания бэкэнд кода были и более интересные задачи,
+                    как например разработка корпоративных приложений для учёта действий компании или различные плагины для синхронизации систем. Было интересно,
+                    но с самого детства мне хотелось научиться делать игры. Поэтому, после многочисленных обучающих курсов и кучи перечитанных книг, я взял курс на геймдев.
+                    </p>
+                </div>
+                <div class="col-md-2"></div>
+            </div>
+            <a class="anchor" name="experience"></a>
+            <div class="row">
+                <div class="col-md-2"></div>
+                <div class="col-md-8">
+                    <hr>
+                </div>
+                <div class="col-md-2"></div>
+            </div>
+            <div class="row d-none d-print-block">
+                <div class="col-md-2"></div>
+                <div class="col-md-8">
+                    <h2 class="mb-4">Основные навыки:</h2>
+                    <ul>
+                        <li>Владение языками C#, PHP, JS, C++, HTML5, CSS/SASS</li>
+                        <li>Опыт работы с Unity, Xamarin, DOTS, Laravel, Vue</li>
+                        <li>Git, Trello, Npm, Composer, Adobe Photoshop, FL Studio</li>
+                    </ul>
+                    <h5>Иностранные языки:</h3>
+                    <ul>
+                        <li>Английский (На уровне чтения документации)</li>
+                    </ul>
+                </div>
+                <div class="col-md-2"></div>
+            </div>
+            <div class="row page-break-after">
+                <div class="col-md-2"></div>
+                <div class="col-md-8">
+                    <h2 class="mb-4">Опыт работы</h2>
+                    <div class="card mb-2">
+                      <div class="card-body">
+                        <h6 class="card-subtitle mb-2 text-muted">Ноябрь 2019 — Настоящее время</h6>
+                        <p class="card-text">Участие в геймджемах и разработка собственных проектов <span class="d-print-none">(Примеры <a href="#projects">ниже</a>)</span></p>
+                      </div>
+                    </div>
+                    <div class="card mb-2">
+                      <div class="card-body">
+                        <h5 class="card-title">ООО "Альматрос"</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Март 2017 — Ноябрь 2019</h6>
+                        <p class="card-text">Разработка веб-приложений, поддержка клиентских проектов, разработка различных решений на клиентских проектах, разработка решений для автоматизации внутренних операций в компании.<br><strong>Рекомендация с места работы:</strong> <a href="dist/docs/recommendation_almatros.jpg" target="_blank">Файл</a></p>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <div class="card-body">
+                        <h5 class="card-title">ООО "Инифинитум групп"</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Сентябрь 2016 — Январь 2017</h6>
+                        <p class="card-text">Разработка телеграм-ботов, доработка клиентских проектов, исправление ошибок в работе клиентских проектов, разработка узко-направленных плагинов.</p>
+                      </div>
+                    </div>
+                </div>
+                <div class="col-md-2"></div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-2"></div>
+                <div class="col-md-8">
+                    <hr>
+                </div>
+                <div class="col-md-2"></div>
+            </div>
+            <div class="row">
+                <div class="col-md-2"></div>
+                <div class="col-md-8">
+                    <h2 class="mb-4">Образование</h2>
+                    <div class="card mb-2">
+                      <div class="card-body">
+                        <h5 class="card-title">Амурский Государственный Университет</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Дневная/Очная форма, 2016</h6>
+                        <p class="card-text"><strong>Факультет:</strong> Математики и Информатики.<br><strong>Специальность:</strong> Прикладная информатика в дизайне.</p>
+                      </div>
+                    </div>
+                </div>
+                <div class="col-md-2"></div>
+            </div>
+
+            <a class="anchor" name="skills"></a>
+            <div class="row">
+                <div class="col-md-2"></div>
+                <div class="col-md-8">
+                    <hr>
+                </div>
+                <div class="col-md-2"></div>
+            </div>
+            <div class="row d-print-none">
+                <div class="col-md-2"></div>
+                <div class="col-md-8">
+                    <h2 class="mb-4">Навыки</h2>
+                    <div class="table-responsive">
+                        <table class="table table-borderless">
+                          <thead>
+                            <tr>
+                              <th scope="col">Языки</th>
+                              <th scope="col">Движки/Фреймворки</th>
+                              <th scope="col">Инструменты</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>C#</td>
+                              <td><a href="https://unity.com/ru" target="_blank">Unity</a></td>
+                              <td>Git</td>
+                            </tr>
+                            <tr>
+                              <td>PHP</td>
+                              <td><a href="https://unity.com/ru/dots" target="_blank">DOTS</a></td>
+                              <td>Npm</td>
+                            </tr>
+                            <tr>
+                              <td>C++</td>
+                              <td><a href="https://dotnet.microsoft.com/apps/xamarin" target="_blank">Xamarin</a></td>
+                              <td>Composer</td>
+                            </tr>
+                            <tr>
+                              <td>JS</td>
+                              <td><a href="https://laravel.com/" target="_blank">Laravel</a></td>
+                              <td>Trello</td>
+                            </tr>
+                            <tr>
+                              <td>HTML5</td>
+                              <td><a href="https://vuejs.org/" target="_blank">Vue</a></td>
+                              <td>FL Studio</td>
+                            </tr>
+                            <tr>
+                              <td>CSS/SASS</td>
+                              <td></td>
+                              <td>Adobe Photoshop</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="col-md-2"></div>
+            </div>
+
+            <a class="anchor d-print-none" name="gamejams"></a>
+
+            <div class="row d-print-none">
+                <div class="col-md-2"></div>
+                <div class="col-md-8">
+                    <hr>
+                </div>
+                <div class="col-md-2"></div>
+            </div>
+
+            <div class="row d-print-none">
+                <div class="col-md-2"></div>
+                <div class="col-md-8">
+                    <h2 class="mb-4">Геймджемы</h2>
+
+                    <div class="row pt-3 mb-3">
+                        <div class="pt-3 mb-3 col-md-6">
+                            <div class="gameproject card">
+                                <div id="carouselExampleFade8" class="carousel slide carousel-fade mb-3" data-ride="carousel">
+                                  <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                      <a href="dist/img/mindescape1.jpg" class="d-flex justify-content-center" target="_blank"><img src="dist/img/mindescape1.jpg" class="d-block" alt="..."></a>
+                                    </div>
+                                    <div class="carousel-item">
+                                      <a href="dist/img/mindescape2.png" class="d-flex justify-content-center"  target="_blank"><img src="dist/img/mindescape2.png" class="d-block" alt="..."></a>
+                                    </div>
+                                    <div class="carousel-item">
+                                      <a href="dist/img/mindescape3.png" class="d-flex justify-content-center"  target="_blank"><img src="dist/img/mindescape3.png" class="d-block" alt="..."></a>
+                                    </div>
+                                  </div>
+                                  <a class="carousel-control-prev" href="#carouselExampleFade8" role="button" data-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Previous</span>
+                                  </a>
+                                  <a class="carousel-control-next" href="#carouselExampleFade8" role="button" data-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Next</span>
+                                  </a>
+                                </div>
+                                <h3 class="text-center"><img src="dist/img/mindescape_logo.jpg" class="logo-icon">Mind Escape</h3>
+                                <p class="text-center">Unity, C#</p>
+                                <p>Игра на геймджем "Народный геймджем". Тема джема была "Изоляция". Игра получила второе место в номинации "Визуальный минимализм" а также высокую оценку в номинации "Игра с лучшим исходным кодом на движке Unity".</p>
+                                <p class="text-center">
+                                    <a class="playmarket-badge mr-2" target="_blank" href="https://maxnitals.itch.io/mind-escape"><img src="dist/img/itchio_badge.svg"></a>
+                                    <a class="btn btn-primary" href="https://github.com/KLEEEEEER/MindEscape" target="_blank">Github <i class="fab fa-github"></i></a>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="pt-3 mb-3 col-md-6">
+                            <div class="gameproject card">
+                                <div id="carouselExampleFade7" class="carousel slide carousel-fade mb-3" data-ride="carousel">
+                                  <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                      <a href="dist/img/Devoured1.png" class="d-flex justify-content-center" target="_blank"><img src="dist/img/Devoured1.png" class="d-block" alt="..."></a>
+                                    </div>
+                                    <div class="carousel-item">
+                                      <a href="dist/img/Devoured_diplom.png" class="d-flex justify-content-center"  target="_blank"><img src="dist/img/Devoured_diplom.png" class="d-block" alt="..."></a>
+                                    </div>
+                                    <div class="carousel-item">
+                                      <a href="dist/img/Devoured2.jpg" class="d-flex justify-content-center"  target="_blank"><img src="dist/img/Devoured2.jpg" class="d-block" alt="..."></a>
+                                    </div>
+                                    <div class="carousel-item">
+                                      <a href="dist/img/Devoured3.jpg" class="d-flex justify-content-center"  target="_blank"><img src="dist/img/Devoured3.jpg" class="d-block" alt="..."></a>
+                                    </div>
+                                  </div>
+                                  <a class="carousel-control-prev" href="#carouselExampleFade7" role="button" data-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Previous</span>
+                                  </a>
+                                  <a class="carousel-control-next" href="#carouselExampleFade7" role="button" data-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Next</span>
+                                  </a>
+                                </div>
+                                <h3 class="text-center"><img src="dist/img/Devoured(Logo).png" class="logo-icon">Devoured (Ludum Dare 47)</h3>
+                                <p class="text-center">Unity, C#</p>
+                                <p>Игра сделана за 72 часа в команде из 5 человек. Тема джема была "Stuck in a loop". Это игра о борьбе со своим внутренним я. Devoured отличается глубокой атмосферой и головоломками. Выйграла в номинации "гейм-дизайн" на Digital Media Art Fest</p>
+                                <p class="text-center">
+                                    <a class="playmarket-badge mr-2" target="_blank" href="https://st1cky-max.itch.io/devoured"><img src="dist/img/itchio_badge.svg"></a>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="pt-3 mb-3 col-md-6">
+                            <div class="gameproject card">
+                                <div id="carouselExampleFade6" class="carousel slide carousel-fade mb-3" data-ride="carousel">
+                                  <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                      <a href="dist/img/arcade_machine_invaders_1.jpg" class="d-flex justify-content-center" target="_blank"><img src="dist/img/arcade_machine_invaders_1.jpg" class="d-block" alt="..."></a>
+                                    </div>
+                                    <div class="carousel-item">
+                                      <a href="dist/img/arcade_machine_invaders_2.jpg" class="d-flex justify-content-center"  target="_blank"><img src="dist/img/arcade_machine_invaders_2.jpg" class="d-block" alt="..."></a>
+                                    </div>
+                                    <div class="carousel-item">
+                                      <a href="dist/img/arcade_machine_invaders_3.jpg" class="d-flex justify-content-center"  target="_blank"><img src="dist/img/arcade_machine_invaders_3.jpg" class="d-block" alt="..."></a>
+                                    </div>
+                                  </div>
+                                  <a class="carousel-control-prev" href="#carouselExampleFade6" role="button" data-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Previous</span>
+                                  </a>
+                                  <a class="carousel-control-next" href="#carouselExampleFade6" role="button" data-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Next</span>
+                                  </a>
+                                </div>
+                                <h3 class="text-center"><img src="dist/img/arcade_machine_invaders_logo.png" class="logo-icon">Arcade Machine Invaders (Curious Game Jam 2020)</h3>
+                                <p class="text-center">Unity, C#</p>
+                                <p>Прототип сделанный за 48 часов. Тема джема была аркадные игры 70-90ых годов. Эта игра построена на механике классической игры Space Invaders жанра Shoot'em up, но с добавлением сюжетного контекста.</p>
+                                <p class="text-center">
+                                    <a class="playmarket-badge mr-2" target="_blank" href="https://maxnitals.itch.io/arcade-machine-invaders"><img src="dist/img/itchio_badge.svg"></a>
+                                    <a class="btn btn-primary" href="https://github.com/KLEEEEEER/ArcadeMachineInvaders" target="_blank">Github <i class="fab fa-github"></i></a>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="pt-3 mb-3 col-md-6">
+                            <div class="gameproject card">
+                                <div id="carouselExampleFade4" class="carousel slide carousel-fade mb-3" data-ride="carousel">
+                                  <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                      <a href="dist/img/yalpdrocer1.jpg" class="d-flex justify-content-center" target="_blank"><img src="dist/img/yalpdrocer1.jpg" class="d-block" alt="..."></a>
+                                    </div>
+                                    <div class="carousel-item">
+                                      <a href="dist/img/yalpdrocer2.jpg" class="d-flex justify-content-center"  target="_blank"><img src="dist/img/yalpdrocer2.jpg" class="d-block" alt="..."></a>
+                                    </div>
+                                    <div class="carousel-item">
+                                      <a href="dist/img/yalpdrocer3.jpg" class="d-flex justify-content-center"  target="_blank"><img src="dist/img/yalpdrocer3.jpg" class="d-block" alt="..."></a>
+                                    </div>
+                                    <div class="carousel-item">
+                                      <a href="dist/img/yalpdrocer4.jpg" class="d-flex justify-content-center"  target="_blank"><img src="dist/img/yalpdrocer4.jpg" class="d-block" alt="..."></a>
+                                    </div>
+                                  </div>
+                                  <a class="carousel-control-prev" href="#carouselExampleFade4" role="button" data-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Previous</span>
+                                  </a>
+                                  <a class="carousel-control-next" href="#carouselExampleFade4" role="button" data-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Next</span>
+                                  </a>
+                                </div>
+                                <h3 class="text-center"><img src="dist/img/yalpdrocer_logo.png" class="logo-icon">yalP droceR (Brackeys Jam 2020.2)</h3>
+                                <p class="text-center">Unity, C#</p>
+                                <p>Прототип платформера сделанный за неделю. Тема джема была REWIND. В этой игре ваш персонаж может кидать устройство, которое можно возвращать во времени. Это же устройство можно использовать как платформу для прыжков, так и как оружие.</p>
+                                <p class="text-center"><a class="playmarket-badge" target="_blank" href="https://maxnitals.itch.io/yalp-drocer"><img src="dist/img/itchio_badge.svg"></a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2"></div>
+            </div>
+
+
+
+
+            <a class="anchor d-print-none" name="projects"></a>
+            <div class="row d-print-none">
+                <div class="col-md-2"></div>
+                <div class="col-md-8">
+                    <hr>
+                </div>
+                <div class="col-md-2"></div>
+            </div>
+            <div class="row d-print-none">
+                <div class="col-md-2"></div>
+                <div class="col-md-8">
+                    <h2 class="mb-4">Личные проекты</h2>
+                    <div class="row">
+                        <div class="pt-3 mb-3 col-md-6">
+                            <div class="gameproject card">
+                                <div id="carouselExampleFade" class="carousel slide carousel-fade mb-3" data-ride="carousel">
+                                  <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                      <a href="dist/img/heyescape1.png" class="d-flex justify-content-center"  target="_blank"><img src="dist/img/heyescape1.png" class="d-block" alt="..."></a>
+                                    </div>
+                                    <div class="carousel-item">
+                                      <a href="dist/img/heyescape2.png" class="d-flex justify-content-center"  target="_blank"><img src="dist/img/heyescape2.png" class="d-block" alt="..."></a>
+                                    </div>
+                                    <div class="carousel-item">
+                                      <a href="dist/img/heyescape3.png" class="d-flex justify-content-center"  target="_blank"><img src="dist/img/heyescape3.png" class="d-block" alt="..."></a>
+                                    </div>
+                                  </div>
+                                  <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Previous</span>
+                                  </a>
+                                  <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Next</span>
+                                  </a>
+                                </div>
+                                <h3 class="text-center"><img src="dist/img/heyescape_logo.png" class="logo-icon">Hey!Escape</h3>
+                                <p class="text-center">Unity, C#</p>
+                                <p>Платформер с элементами Stealth механик. Ваша задача - сбежать из здания злодеев, пройдя каждый этаж, не попавшись на глаза врагам. Один взгляд в вашу сторону и вы начнёте сначала.</p>
+                                <p class="text-center">
+                                    <a class="playmarket-badge" target="_blank" href='https://play.google.com/store/apps/details?id=com.MaxNitals.Heyescape&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img alt='Доступно в Google Play' src='https://play.google.com/intl/en_us/badges/static/images/badges/ru_badge_web_generic.png'/></a>
+                                    <a class="btn btn-primary" href="https://github.com/KLEEEEEER/hey-escape" target="_blank">Github <i class="fab fa-github"></i></a>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="pt-3 mb-3 col-md-6">
+                            <div class="gameproject card">
+                                <div id="carouselExampleFade1" class="carousel slide carousel-fade mb-3" data-ride="carousel">
+                                  <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                      <a href="dist/img/thedoor1.jpg" class="d-flex justify-content-center"  target="_blank"><img src="dist/img/thedoor1.jpg" class="d-block" alt="..."></a>
+                                    </div>
+                                    <div class="carousel-item">
+                                      <a href="dist/img/thedoor2.jpg" class="d-flex justify-content-center"  target="_blank"><img src="dist/img/thedoor2.jpg" class="d-block" alt="..."></a>
+                                    </div>
+                                    <div class="carousel-item">
+                                      <a href="dist/img/thedoor3.jpg" class="d-flex justify-content-center"  target="_blank"><img src="dist/img/thedoor3.jpg" class="d-block" alt="..."></a>
+                                    </div>
+                                  </div>
+                                  <a class="carousel-control-prev" href="#carouselExampleFade1" role="button" data-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Previous</span>
+                                  </a>
+                                  <a class="carousel-control-next" href="#carouselExampleFade1" role="button" data-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Next</span>
+                                  </a>
+                                </div>
+                                <h3 class="text-center"><img src="dist/img/thedoor_logo.png" class="logo-icon">Tired things: The Door</h3>
+                                <p class="text-center">Unity, C#</p>
+                                <p>Вы играете дверью, которая просто устала стоять на одном месте и убежала. Бегите, избегайте препятствий и собирайте монеты, чтобы набрать больше очков.</p>
+                                <p class="text-center"><a class="playmarket-badge" target="_blank" href='https://play.google.com/store/apps/details?id=com.MaxNitals.TiredthingsThedoor&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img alt='Доступно в Google Play' src='https://play.google.com/intl/en_us/badges/static/images/badges/ru_badge_web_generic.png'/></a></p>
+                            </div>
+                        </div>
+
+                        <div class="pt-3 mb-3 col-md-6">
+                            <div class="gameproject card">
+                                <div id="carouselExampleFade5" class="carousel slide carousel-fade mb-3" data-ride="carousel">
+                                  <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                      <a href="dist/img/1G2B1.png" class="d-flex justify-content-center"  target="_blank"><img src="dist/img/1G2B1.png" class="d-block" alt="..."></a>
+                                    </div>
+                                    <div class="carousel-item">
+                                      <a href="dist/img/1G2B2.png" class="d-flex justify-content-center"  target="_blank"><img src="dist/img/1G2B2.png" class="d-block" alt="..."></a>
+                                    </div>
+                                    <div class="carousel-item">
+                                      <a href="dist/img/1G2B3.png" class="d-flex justify-content-center"  target="_blank"><img src="dist/img/1G2B3.png" class="d-block" alt="..."></a>
+                                    </div>
+                                  </div>
+                                  <a class="carousel-control-prev" href="#carouselExampleFade5" role="button" data-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Previous</span>
+                                  </a>
+                                  <a class="carousel-control-next" href="#carouselExampleFade5" role="button" data-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Next</span>
+                                  </a>
+                                </div>
+                                <h3 class="text-center"><img src="dist/img/1G2B_logo.jpg" class="logo-icon">1G2B</h3>
+                                <p class="text-center">Unity, C#</p>
+                                <p>Вы куб. Уворачивайтесь от двух шариков и подбирайте один шарик. Один - хорошо, два - плохо.</p>
+                                <p class="text-center"><a class="playmarket-badge" target="_blank" href='https://play.google.com/store/apps/details?id=com.MaxNitals.OneGoodTwoBad'><img alt='Доступно в Google Play' src='https://play.google.com/intl/en_us/badges/static/images/badges/ru_badge_web_generic.png'/></a></p>
+                            </div>
+                        </div>
+
+                        <div class="pt-3 mb-3 col-md-6">
+                            <div class="gameproject card">
+                                <div id="carouselExampleFade2" class="carousel slide carousel-fade mb-3" data-ride="carousel">
+                                  <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                      <a href="dist/img/rateanything1.jpg" class="d-flex justify-content-center"  target="_blank"><img src="dist/img/rateanything1.jpg" class="d-block" alt="..."></a>
+                                    </div>
+                                    <div class="carousel-item">
+                                      <a href="dist/img/rateanything2.jpg" class="d-flex justify-content-center"  target="_blank"><img src="dist/img/rateanything2.jpg" class="d-block" alt="..."></a>
+                                    </div>
+                                    <div class="carousel-item">
+                                      <a href="dist/img/rateanything3.jpg" class="d-flex justify-content-center"  target="_blank"><img src="dist/img/rateanything3.jpg" class="d-block" alt="..."></a>
+                                    </div>
+                                  </div>
+                                  <a class="carousel-control-prev" href="#carouselExampleFade2" role="button" data-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Previous</span>
+                                  </a>
+                                  <a class="carousel-control-next" href="#carouselExampleFade2" role="button" data-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Next</span>
+                                  </a>
+                                </div>
+                                <h3 class="text-center"><img src="dist/img/rateanything_logo.png" class="logo-icon">Rate Anything</h3>
+                                <p class="text-center">Xamarin, C#</p>
+                                <p>Приложение позволяет вести списки вещей, которые вы хотите оценить друг с другом. Например, вы можете забыть, насколько хорошим или плохим было кафе, в котором вы были полгода назад. Или какой из сотен сыров вы предпочитаете. В «Rate Anything» вы можете создавать любые списки и сортировать их по указанному вами рейтингу или дате создания.</p>
+                                <p class="text-center"><a class="playmarket-badge" target="_blank" href='https://play.google.com/store/apps/details?id=com.maxnitals.rateanything&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img alt='Доступно в Google Play' src='https://play.google.com/intl/en_us/badges/static/images/badges/ru_badge_web_generic.png'/></a></p>
+                            </div>
+                        </div>
+
+                        <div class="pt-3 mb-3 col-md-6">
+                            <div class="gameproject card">
+                                <div id="carouselExampleFade3" class="carousel slide carousel-fade mb-3" data-ride="carousel">
+                                  <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                      <a href="dist/img/namine1.jpg" class="d-flex justify-content-center"  target="_blank"><img src="dist/img/namine1.jpg" class="d-block" alt="..."></a>
+                                    </div>
+                                  </div>
+                                  <a class="carousel-control-prev" href="#carouselExampleFade3" role="button" data-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Previous</span>
+                                  </a>
+                                  <a class="carousel-control-next" href="#carouselExampleFade3" role="button" data-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Next</span>
+                                  </a>
+                                </div>
+                                <h3 class="text-center"><img src="dist/img/namine_logo.jpg" class="logo-icon">Namine</h3>
+                                <p class="text-center">Opencart, JS</p>
+                                <p>Скрипт, созданный для упрощения написания модификаций OpenCart. Он собирает все части модификаций из файлов кода сайта и соединяет их в отдельный установочный файл.</p>
+                                <p class="text-center"><a class="btn btn-primary" href="https://github.com/KLEEEEEER/Namine" target="_blank">Github <i class="fab fa-github"></i></a></p>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+                </div>
+                <div class="col-md-2"></div>
+            </div>
+
+            <a class="anchor d-print-none" name="info"></a>
+            <div class="row d-print-none">
+                <div class="col-md-2"></div>
+                <div class="col-md-8">
+                    <hr>
+                </div>
+                <div class="col-md-2"></div>
+            </div>
+            <div class="row d-print-none">
+                <div class="col-md-2"></div>
+                <div class="col-md-4 col-sm-12">
+                    <h2 class="mb-4">Контакты</h2>
+                    <p>E-mail: <a href="mailto:maxnitals@yandex.ru">maxnitals@yandex.ru</a></p>
+                    <p>Telegram: <a href="https://t.me/kleeeeeer">https://t.me/kleeeeeer</a></p>
+                    <p>Github: <a href="https://github.com/KLEEEEEER">https://github.com/KLEEEEEER</a></p>
+                    <p>Itch.io: <a href="https://maxnitals.itch.io/">https://maxnitals.itch.io</a></p>
+                    <p>Vk: <a href="https://vk.com/maxnitals">https://vk.com/maxnitals</a></p>
+                </div>
+                <div class="col-lg-3 col-md-12 col-sm-12 mb-2 d-flex justify-content-center position-relative d-sm-none d-md-none d-lg-block">
+                    <p class="text-center">Ссылка на эту страницу:</p>
+                    &nbsp;<img src="dist/img/site_qr.png" class="qr-code">
+                </div>
+                <div class="col-lg-1 col-md-12 col-sm-12 mb-2 d-flex justify-content-center"><a href="#top" class="btn btn-primary">↑ Наверх</a></div>
+                <div class="col-md-2"></div>
+            </div>
+            <div class="row d-none d-print-block">
+                <div class="col-md-2"></div>
+                <div class="col-md-8">
+                    <h2 class="mb-4">О себе:</h2>
+                    <p>
+                        Люблю игры, люблю делать игры, поэтому увлекаюсь также многими смежными областями: 3д моделирование, анимация, создание музыки, видеомонтаж.
+                        Могу уверенно назвать себя трудолюбивым и ответственным человеком.
+                    </p>
+                </div>
+                <div class="col-md-2"></div>
+            </div>
+
+            <div class="row d-none d-print-block">
+                <div class="col-md-2"></div>
+                <div class="col-md-8">
+                    <hr>
+                </div>
+                <div class="col-md-2"></div>
+            </div>
+            <div class="row d-none d-print-block">
+                <div class="col-md-2"></div>
+                <div class="col-md-8">
+                    <h2 class="mb-4">Участие в проектах:</h2>
+                    <div class="row">
+                        <div class="card mb-2 col-4">
+                          <img class="card-img-top" src="dist/img/mindescape2.png" alt="Card image cap">
+                          <div class="card-body">
+                            <h5 class="card-title">Mind Escape (Народный джем)</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Unity / C#</h6>
+                            <p class="card-text">Второе место в номинации "Визуальный минимализм"</p>
+                          </div>
+                        </div>
+                        <div class="card mb-2 col-4">
+                          <img class="card-img-top" src="dist/img/Devoured2.jpg" alt="Card image cap">
+                          <div class="card-body">
+                            <h5 class="card-title">Devoured (Ludum Dare 47)</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Unity / C#</h6>
+                            <p class="card-text">Игра сделана в команде из 5 человек. Победа в номинации "гейм-дизайн" на Digital Media Art Fest</p>
+                          </div>
+                        </div>
+                        <div class="card mb-2 col-4">
+                          <img class="card-img-top" src="dist/img/heyescape2.png" alt="Card image cap">
+                          <div class="card-body">
+                            <h5 class="card-title">Hey!Escape</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Unity / C#</h6>
+                            <p class="card-text">Личный проект. Всегда хотел попробовать сделать 2D Stealth платформер.</p>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2"></div>
+            </div>
+            <div class="row">
+                <div class="col-md-12"><br><p>Другие проекты и более подробная информация на <a href="https://kleeeeeer.github.io/maxnitalsgames/">https://kleeeeeer.github.io/maxnitalsgames/</a></p></div>
+            </div>
+        </div>
+    </body>
+    <script src="dist/js/bundle.js"></script>
+</html>

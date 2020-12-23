@@ -1,0 +1,483 @@
+{
+    "title": "Портфолио - Максим Сластин",
+    "top_links": [
+        {
+            "name": "background",
+            "title": "Бэкграунд"
+        },
+        {
+            "name": "experience",
+            "title": "Опыт работы"
+        },
+        {
+            "name": "skills",
+            "title": "Навыки"
+        },
+        {
+            "name": "projects",
+            "title": "Проекты"
+        },
+        {
+            "name": "gamejams",
+            "title": "Геймджемы"
+        },
+        {
+            "name": "info",
+            "title": "Контакты"
+        }
+    ],
+    "og_info": {
+        "title": "Портфолио - Максим Сластин",
+        "site_name": "Max Nitals Games",
+        "url": "https://kleeeeeer.github.io/maxnitalsgames",
+        "description": "Разработчик игр и веб-приложений",
+        "image": "https://kleeeeeer.github.io/maxnitalsgames/dist/img/face(500x500).png"
+    },
+    "top_info": {
+        "h2": "Привет,",
+        "h4": "меня зовут Максим Сластин.",
+        "about": "Я разработчик компьютерных и мобильных игр, а также веб-приложений и сайтов.",
+        "link_icons": [
+                {
+                    "link": "https://github.com/KLEEEEEER",
+                    "icon_class": "fab fa-github",
+                    "title": "Github"
+                },
+                {
+                    "link": "https://play.google.com/store/apps/developer?id=Max+Nitals",
+                    "icon_class": "fab fa-google-play",
+                    "title": "Play market"
+                },
+                {
+                    "link": "https://maxnitals.itch.io/",
+                    "icon_class": "fab fa-itch-io",
+                    "title": "Itch.io"
+                },
+                {
+                    "link": "https://t.me/kleeeeeer",
+                    "icon_class": "fab fa-telegram-plane",
+                    "title": "Telegram"
+                },
+                {
+                    "link": "https://vk.com/maxnitals",
+                    "icon_class": "fab fa-vk",
+                    "title": "Вконтакте"
+                },
+                {
+                    "link": "mailto:maxnitals@yandex.ru",
+                    "icon_class": "fas fa-at",
+                    "title": "Почта"
+                }
+        ],
+        "about_additional": "Участвовать в разработке игр, которые приносят удовольствие людям - моя страсть. Делать это в хорошей команде ещё интереснее. Поэтому, если у вас есть предложения по работе или вы просто хотите задать вопрос - отправляйте сообщение на мой ящик <a href='mailto:maxnitals@yandex.ru'>maxnitals@yandex.ru</a> или телеграм <a href='https://t.me/kleeeeeer' target='_blank'>https://t.me/kleeeeeer</a>"
+    },
+    "print_info": {
+        "name": "Сластин Максим Владимирович",
+        "image": "./dist/img/face(500x500).png",
+        "birthday": "10.03.1995 г.",
+        "citizenship": "Россия",
+        "residence": "Благовещенск, Амурская область",
+        "career_objective": "Unity-разработчик (Junior)",
+        "desired_income_level": "40 тыс. рублей",
+        "contacts": [
+            {
+                "name": "E-mail",
+                "href": "mailto:maxnitals@yandex.ru",
+                "title": "maxnitals@yandex.ru"
+            },
+            {
+                "name": "Telegram",
+                "href": "https://t.me/kleeeeeer",
+                "title": "https://t.me/kleeeeeer"
+            },
+            {
+                "name": "Vk",
+                "href": "https://vk.com/maxnitals",
+                "title": "https://vk.com/maxnitals"
+            }
+        ],
+        "skills": [
+            "Владение языками C#, PHP, JS, C++, HTML5, CSS/SASS",
+            "Опыт работы с Unity, Xamarin, DOTS, Laravel, Vue",
+            "Git, Trello, Npm, Composer, Adobe Photoshop, FL Studio"
+        ],
+        "languages": [
+            "Английский (На уровне чтения документации)"
+        ],
+        "about_me": "Люблю игры, люблю делать игры, поэтому увлекаюсь также многими смежными областями: 3д моделирование, анимация, создание музыки, видеомонтаж. Могу уверенно назвать себя трудолюбивым и ответственным человеком.",
+        "projects": [
+            {
+                "title": "Mind Escape (Народный джем)",
+                "image": "dist/img/mindescape2.png",
+                "subtitle": "Unity / C#",
+                "description": "Второе место в номинации \"Визуальный минимализм\""
+            },
+            {
+                "title": "Devoured (Ludum Dare 47)",
+                "image": "dist/img/Devoured2.jpg",
+                "subtitle": "Unity / C#",
+                "description": "Игра сделана в команде из 5 человек. Победа в номинации \"гейм-дизайн\" на Digital Media Art Fest"
+            },
+            {
+                "title": "Hey!Escape",
+                "image": "dist/img/heyescape2.png",
+                "subtitle": "Unity / C#",
+                "description": "Личный проект. Всегда хотел попробовать сделать 2D Stealth платформер."
+            }
+        ]
+    },
+    "background_info": {
+        "main_text": "После получения высшего образования по специальности \"Программирование в дизайне\", я работал веб-программистом. Помимо настройки серверов и написания бэкэнд кода были и более интересные задачи, как например разработка корпоративных приложений для учёта действий компании или различные плагины для синхронизации систем. Было интересно, но с самого детства мне хотелось научиться делать игры. Поэтому, после многочисленных обучающих курсов и кучи перечитанных книг, я взял курс на геймдев."
+    },
+    "experiences": [
+        {
+            "title": "",
+            "subtitle": "Ноябрь 2019 — Настоящее время",
+            "text": "Участие в геймджемах и разработка собственных проектов <span class=\"d-print-none\">(Примеры <a href=\"#projects\">ниже</a>)</span>"
+        },
+        {
+            "title": "ООО \"Альматрос\"",
+            "subtitle": "Март 2017 — Ноябрь 2019",
+            "text": "Разработка веб-приложений, поддержка клиентских проектов, разработка различных решений на клиентских проектах, разработка решений для автоматизации внутренних операций в компании.<br><strong>Рекомендация с места работы:</strong> <a href=\"dist/docs/recommendation_almatros.jpg\" target=\"_blank\">Файл</a>"
+        },
+        {
+            "title": "ООО \"Инифинитум групп\"",
+            "subtitle": "Сентябрь 2016 — Январь 2017",
+            "text": "Разработка телеграм-ботов, доработка клиентских проектов, исправление ошибок в работе клиентских проектов, разработка узко-направленных плагинов."
+        }
+    ],
+    "educations": [
+        {
+            "title": "Амурский Государственный Университет",
+            "subtitle": "Дневная/Очная форма, 2016",
+            "text": "<strong>Факультет:</strong> Математики и Информатики.<br><strong>Специальность:</strong> Прикладная информатика в дизайне."
+        }
+    ],
+    "skills": {
+        "languages": [
+            "C#", "PHP", "JS", "C++", "HTML5", "CSS/SASS"
+        ],
+        "engines": [
+            "Unity", "DOTS", "Xamarin", "Laravel", "Vue"
+        ],
+        "tools": [
+            "Git", "Npm", "Composer", "Trello", "FL Studio", "Adobe Photoshop"
+        ]
+    },
+    "gamejams": [
+        {
+            "title": "Mind Escape",
+            "subtitle": "Unity, C#",
+            "description": "Игра на геймджем \"Народный геймджем\". Тема джема была \"Изоляция\". Игра получила второе место в номинации \"Визуальный минимализм\" а также высокую оценку в номинации \"Игра с лучшим исходным кодом на движке Unity\".",
+            "logo": "dist/img/mindescape_logo.jpg",
+            "images": [
+                {
+                    "min": "dist/img/mindescape1.jpg",
+                    "detail": "dist/img/mindescape1.jpg",
+                    "alt": "..."
+                },
+                {
+                    "min": "dist/img/mindescape2.png",
+                    "detail": "dist/img/mindescape2.png",
+                    "alt": "..."
+                },
+                {
+                    "min": "dist/img/mindescape3.png",
+                    "detail": "dist/img/mindescape3.png",
+                    "alt": "..."
+                }
+            ],
+            "links": [
+                {
+                    "button_class": "playmarket-badge mr-2",
+                    "href": "https://maxnitals.itch.io/mind-escape",
+                    "button_text": "<img src=\"dist/img/itchio_badge.svg\">"
+                },
+                {
+                    "button_class": "btn btn-primary",
+                    "href": "https://github.com/KLEEEEEER/MindEscape",
+                    "button_text": "Github <i class=\"fab fa-github\"></i>"
+                }
+            ]
+        },
+        {
+            "title": "Devoured (Ludum Dare 47)",
+            "subtitle": "Unity, C#",
+            "description": "Игра сделана за 72 часа в команде из 5 человек. Тема джема была \"Stuck in a loop\". Это игра о борьбе со своим внутренним я. Devoured отличается глубокой атмосферой и головоломками. Выйграла в номинации \"гейм-дизайн\" на Digital Media Art Fest",
+            "logo": "dist/img/Devoured(Logo).png",
+            "images": [
+                {
+                    "min": "dist/img/Devoured1.png",
+                    "detail": "dist/img/Devoured1.png",
+                    "alt": "..."
+                },
+                {
+                    "min": "dist/img/Devoured_diplom.png",
+                    "detail": "dist/img/Devoured_diplom.png",
+                    "alt": "..."
+                },
+                {
+                    "min": "dist/img/Devoured2.jpg",
+                    "detail": "dist/img/Devoured2.jpg",
+                    "alt": "..."
+                },
+                {
+                    "min": "dist/img/Devoured3.jpg",
+                    "detail": "dist/img/Devoured3.jpg",
+                    "alt": "..."
+                }
+            ],
+            "links": [
+                {
+                    "button_class": "playmarket-badge mr-2",
+                    "href": "https://st1cky-max.itch.io/devoured",
+                    "button_text": "<img src=\"dist/img/itchio_badge.svg\">"
+                }
+            ]
+        },
+        {
+            "title": "Arcade Machine Invaders (Curious Game Jam 2020)",
+            "subtitle": "Unity, C#",
+            "description": "Прототип сделанный за 48 часов. Тема джема была аркадные игры 70-90ых годов. Эта игра построена на механике классической игры Space Invaders жанра Shoot'em up, но с добавлением сюжетного контекста.",
+            "logo": "dist/img/arcade_machine_invaders_logo.png",
+            "images": [
+                {
+                    "min": "dist/img/arcade_machine_invaders_1.jpg",
+                    "detail": "dist/img/arcade_machine_invaders_1.jpg",
+                    "alt": "..."
+                },
+                {
+                    "min": "dist/img/arcade_machine_invaders_2.jpg",
+                    "detail": "dist/img/arcade_machine_invaders_2.jpg",
+                    "alt": "..."
+                },
+                {
+                    "min": "dist/img/arcade_machine_invaders_3.jpg",
+                    "detail": "dist/img/arcade_machine_invaders_3.jpg",
+                    "alt": "..."
+                }
+            ],
+            "links": [
+                {
+                    "button_class": "playmarket-badge mr-2",
+                    "href": "https://maxnitals.itch.io/arcade-machine-invaders",
+                    "button_text": "<img src=\"dist/img/itchio_badge.svg\">"
+                },
+                {
+                    "button_class": "btn btn-primary",
+                    "href": "https://github.com/KLEEEEEER/ArcadeMachineInvaders",
+                    "button_text": "Github <i class=\"fab fa-github\"></i>"
+                }
+            ]
+        },
+        {
+            "title": "yalP droceR (Brackeys Jam 2020.2)",
+            "subtitle": "Unity, C#",
+            "description": "Прототип платформера сделанный за неделю. Тема джема была REWIND. В этой игре ваш персонаж может кидать устройство, которое можно возвращать во времени. Это же устройство можно использовать как платформу для прыжков, так и как оружие.",
+            "logo": "dist/img/yalpdrocer_logo.png",
+            "images": [
+                {
+                    "min": "dist/img/yalpdrocer1.jpg",
+                    "detail": "dist/img/yalpdrocer1.jpg",
+                    "alt": "..."
+                },
+                {
+                    "min": "dist/img/yalpdrocer2.jpg",
+                    "detail": "dist/img/yalpdrocer2.jpg",
+                    "alt": "..."
+                },
+                {
+                    "min": "dist/img/yalpdrocer3.jpg",
+                    "detail": "dist/img/yalpdrocer3.jpg",
+                    "alt": "..."
+                },
+                {
+                    "min": "dist/img/yalpdrocer4.jpg",
+                    "detail": "dist/img/yalpdrocer4.jpg",
+                    "alt": "..."
+                }
+            ],
+            "links": [
+                {
+                    "button_class": "playmarket-badge mr-2",
+                    "href": "https://maxnitals.itch.io/yalp-drocer",
+                    "button_text": "<img src=\"dist/img/itchio_badge.svg\">"
+                }
+            ]
+        }
+    ],
+    "projects": [
+        {
+            "title": "Hey!Escape",
+            "subtitle": "Unity, C#",
+            "description": "Платформер с элементами Stealth механик. Ваша задача - сбежать из здания злодеев, пройдя каждый этаж, не попавшись на глаза врагам. Один взгляд в вашу сторону и вы начнёте сначала.",
+            "logo": "dist/img/heyescape_logo.png",
+            "images": [
+                {
+                    "min": "dist/img/heyescape1.png",
+                    "detail": "dist/img/heyescape1.png",
+                    "alt": "..."
+                },
+                {
+                    "min": "dist/img/heyescape2.png",
+                    "detail": "dist/img/heyescape2.png",
+                    "alt": "..."
+                },
+                {
+                    "min": "dist/img/heyescape3.png",
+                    "detail": "dist/img/heyescape3.png",
+                    "alt": "..."
+                }
+            ],
+            "links": [
+                {
+                    "button_class": "playmarket-badge mr-2",
+                    "href": "https://play.google.com/store/apps/details?id=com.MaxNitals.Heyescape&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1",
+                    "button_text": "<img alt='Доступно в Google Play' src='https://play.google.com/intl/en_us/badges/static/images/badges/ru_badge_web_generic.png'/>"
+                },
+                {
+                    "button_class": "btn btn-primary",
+                    "href": "https://github.com/KLEEEEEER/hey-escape",
+                    "button_text": "Github <i class=\"fab fa-github\"></i>"
+                }
+            ]
+        },
+        {
+            "title": "Tired things: The Door",
+            "subtitle": "Unity, C#",
+            "description": "Вы играете дверью, которая просто устала стоять на одном месте и убежала. Бегите, избегайте препятствий и собирайте монеты, чтобы набрать больше очков.",
+            "logo": "dist/img/thedoor_logo.png",
+            "images": [
+                {
+                    "min": "dist/img/thedoor1.jpg",
+                    "detail": "dist/img/thedoor1.jpg",
+                    "alt": "..."
+                },
+                {
+                    "min": "dist/img/thedoor2.jpg",
+                    "detail": "dist/img/thedoor2.jpg",
+                    "alt": "..."
+                },
+                {
+                    "min": "dist/img/thedoor3.jpg",
+                    "detail": "dist/img/thedoor3.jpg",
+                    "alt": "..."
+                }
+            ],
+            "links": [
+                {
+                    "button_class": "playmarket-badge mr-2",
+                    "href": "https://play.google.com/store/apps/details?id=com.MaxNitals.TiredthingsThedoor&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1",
+                    "button_text": "<img alt='Доступно в Google Play' src='https://play.google.com/intl/en_us/badges/static/images/badges/ru_badge_web_generic.png'/>"
+                }
+            ]
+        },
+        {
+            "title": "1G2B",
+            "subtitle": "Unity, C#",
+            "description": "Вы куб. Уворачивайтесь от двух шариков и подбирайте один шарик. Один - хорошо, два - плохо.",
+            "logo": "dist/img/1G2B_logo.jpg",
+            "images": [
+                {
+                    "min": "dist/img/1G2B1.png",
+                    "detail": "dist/img/1G2B1.png",
+                    "alt": "..."
+                },
+                {
+                    "min": "dist/img/1G2B2.png",
+                    "detail": "dist/img/1G2B2.png",
+                    "alt": "..."
+                },
+                {
+                    "min": "dist/img/1G2B3.png",
+                    "detail": "dist/img/1G2B3.png",
+                    "alt": "..."
+                }
+            ],
+            "links": [
+                {
+                    "button_class": "playmarket-badge mr-2",
+                    "href": "https://play.google.com/store/apps/details?id=com.MaxNitals.OneGoodTwoBad",
+                    "button_text": "<img alt='Доступно в Google Play' src='https://play.google.com/intl/en_us/badges/static/images/badges/ru_badge_web_generic.png'/>"
+                }
+            ]
+        },
+        {
+            "title": "Rate Anything",
+            "subtitle": "Xamarin, C#",
+            "description": "Приложение позволяет вести списки вещей, которые вы хотите оценить друг с другом. Например, вы можете забыть, насколько хорошим или плохим было кафе, в котором вы были полгода назад. Или какой из сотен сыров вы предпочитаете. В «Rate Anything» вы можете создавать любые списки и сортировать их по указанному вами рейтингу или дате создания.",
+            "logo": "dist/img/rateanything_logo.png",
+            "images": [
+                {
+                    "min": "dist/img/rateanything1.jpg",
+                    "detail": "dist/img/rateanything1.jpg",
+                    "alt": "..."
+                },
+                {
+                    "min": "dist/img/rateanything2.jpg",
+                    "detail": "dist/img/rateanything2.jpg",
+                    "alt": "..."
+                },
+                {
+                    "min": "dist/img/rateanything3.jpg",
+                    "detail": "dist/img/rateanything3.jpg",
+                    "alt": "..."
+                }
+            ],
+            "links": [
+                {
+                    "button_class": "playmarket-badge mr-2",
+                    "href": "https://play.google.com/store/apps/details?id=com.maxnitals.rateanything&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1",
+                    "button_text": "<img alt='Доступно в Google Play' src='https://play.google.com/intl/en_us/badges/static/images/badges/ru_badge_web_generic.png'/>"
+                }
+            ]
+        },
+        {
+            "title": "Namine",
+            "subtitle": "Opencart, JS",
+            "description": "Скрипт, созданный для упрощения написания модификаций OpenCart. Он собирает все части модификаций из файлов кода сайта и соединяет их в отдельный установочный файл.",
+            "logo": "dist/img/namine_logo.jpg",
+            "images": [
+                {
+                    "min": "dist/img/namine1.jpg",
+                    "detail": "dist/img/namine1.jpg",
+                    "alt": "..."
+                }
+            ],
+            "links": [
+                {
+                    "button_class": "btn btn-primary",
+                    "href": "https://github.com/KLEEEEEER/Namine",
+                    "button_text": "Github <i class=\"fab fa-github\"></i>"
+                }
+            ]
+        }
+    ],
+    "contacts": [
+        {
+            "title": "E-mail",
+            "href": "mailto:maxnitals@yandex.ru",
+            "text": "maxnitals@yandex.ru"
+        },
+        {
+            "title": "Telegram",
+            "href": "https://t.me/kleeeeeer",
+            "text": "https://t.me/kleeeeeer"
+        },
+        {
+            "title": "Github",
+            "href": "https://github.com/KLEEEEEER",
+            "text": "https://github.com/KLEEEEEER"
+        },
+        {
+            "title": "Itch.io",
+            "href": "https://maxnitals.itch.io/",
+            "text": "https://maxnitals.itch.io/"
+        },
+        {
+            "title": "Vk",
+            "href": "https://vk.com/maxnitals",
+            "text": "https://vk.com/maxnitals"
+        }
+    ]
+}

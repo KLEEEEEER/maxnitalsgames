@@ -1,0 +1,307 @@
+- var carousel_index = 0;
+
+doctype html
+html
+    head
+        link(rel="stylesheet" href="dist/css/styles.css")
+        meta(name="viewport" content="width=device-width, initial-scale=1")
+        meta(charset="utf-8")
+        meta(property="og:title" content=maininfo.og_info.title)
+        meta(property="og:site_name" content=maininfo.og_info.site_name)
+        meta(property="og:url" content=maininfo.og_info.url)
+        meta(property="og:description" content=maininfo.og_info.description)
+        meta(property="og:image" content=maininfo.og_info.image)
+        link(rel="icon" href="dist/img/face(500x500).png")
+        title= maininfo.title
+    body#main_body
+        a(class="anchor" name="top")
+        nav(class="navbar navbar-expand-lg navbar-light bg-light sticky-top")
+            button(class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation")
+                span.navbar-toggler-icon
+            div(class="collapse navbar-collapse d-lg-flex justify-content-lg-center" id="navbarNavDropdown")
+                ul(class="navbar-nav pl-2")
+                    each anchor in maininfo.top_links
+                        li(class="nav-item")
+                            a(class="nav-link" href="#"+anchor.name)= anchor.title
+                    li.nav-item
+                        div(class="position-relative d-inline-block dark-theme-toggle-wrapper ml-5")
+                            i(class="fas fa-sun position-absolute day-mode-icon")
+                            a(href="#" id="dark_theme_toggle_off" target="_blank")
+                                i(class="fas fa-toggle-off")
+                            a(href="#" id="dark_theme_toggle_on" target="_blank")
+                                i(class="fas fa-toggle-on")
+                            i(class="fas fa-moon position-absolute night-mode-icon")
+            script !{darkThemeScript}
+        div.container
+            div.row.first-row
+                .col-md-2.col-lg-3.d-print-none
+                div(class="col-12 col-sm-6 col-md-4 col-lg-2 d-flex justify-content-md-end justify-content-center d-print-none")
+                    div(class="main-face float-md-right float-sm-none")
+                div(class="col-12 col-sm-6 col-md-4 col-lg-4 justify-content-md-end justify-content-center align-items-center d-print-none")
+                    h2= maininfo.top_info.h2
+                    h4= maininfo.top_info.h4
+                    p= maininfo.top_info.about
+                    div(class="d-flex justify-content-md-start justify-content-center")
+                        ul(class="list-group list-group-horizontal social-icons")
+                            each link_icon in maininfo.top_info.link_icons
+                                li(class="list-group-item")
+                                    a(href=link_icon.link  target="_blank")
+                                        i(class=link_icon.icon_class data-html="true" data-toggle="tooltip" data-placement="top" title=link_icon.title + " <i class='fas fa-external-link-alt'></i>")
+                div(class="d-none col-8 col-sm-6 col-md-4 col-lg-4 justify-content-md-end justify-content-center d-print-inline-block")
+                    p.font-weight-bold.h4= maininfo.print_info.name
+                    p
+                        <strong>Дата рождения:</strong> !{maininfo.print_info.birthday} <br>
+                        <strong>Гражданство:</strong> !{maininfo.print_info.citizenship} <br>
+                        span !{maininfo.print_info.residence} <br>
+                        <strong>Желаемая должность:</strong> !{maininfo.print_info.career_objective} <br>
+                        <strong>Желаемый уровень дохода:</strong> !{maininfo.print_info.desired_income_level} <br>
+                        <strong>Контактная информация:</strong><br>
+                        each contact in maininfo.print_info.contacts
+                            span !{contact.name}:
+                                    a(href=contact.href target="_blank")= contact.title
+                                    br
+                div(class="col-4 d-none d-print-inline-block main-face-print-wrapper")
+                    img(class="main-face-print" src=maininfo.print_info.image)
+
+                div(class="col-md-6 d-print-none")
+
+            div(class="row mt-3 d-print-none")
+                div.col-md-2
+                div.col-md-8
+                    p !{maininfo.top_info.about_additional}
+                div.col-md-2
+
+            a(class="anchor" name="background")
+
+            div(class="row d-print-none")
+                div.col-md-2
+                div.col-md-8
+                    hr
+                div.col-md-2
+
+            div(class="row d-print-none")
+                div.col-md-2
+                div.col-md-8
+                    h2.mb-4 Бэкграунд
+                    p= maininfo.background_info.main_text
+
+            a(class="anchor" name="experience")
+
+            div(class="row d-print-none")
+                div.col-md-2
+                div.col-md-8
+                    hr
+                div.col-md-2
+
+            div(class="row d-none d-print-block")
+                div.col-md-2
+                div.col-md-8
+                    h2.mb-4 Основные навыки:
+                    ul
+                        each skill in maininfo.print_info.skills
+                            li= skill
+                    h5 Иностранные языки:
+                    ul
+                        each language in maininfo.print_info.languages
+                            li= language
+                div.col-md-2
+
+            div(class="row page-break-after")
+                div.col-md-2
+                div.col-md-8
+                    h2.mb-4 Опыт работы:
+                    each experience in maininfo.experiences
+                        div.card.mb-2
+                            div.card-body
+                                h5.card-title !{experience.title}
+                                h5(class="card-subtitle mb-2 text-muted") !{experience.subtitle}
+                                p.card-text !{experience.text}
+                div.col-md-2
+
+            div(class="row")
+                div.col-md-2
+                div.col-md-8
+                    hr
+                div.col-md-2
+
+            div(class="row")
+                div.col-md-2
+                div.col-md-8
+                    h2.mb-4 Образование:
+                    each education in maininfo.educations
+                        div.card.mb-2
+                            div.card-body
+                                h5.card-title !{education.title}
+                                h5(class="card-subtitle mb-2 text-muted") !{education.subtitle}
+                                p.card-text !{education.text}
+                div.col-md-2
+
+            a(class="anchor" name="skills")
+
+            div(class="row")
+                div.col-md-2
+                div.col-md-8
+                    hr
+                div.col-md-2
+
+            div(class="row d-print-none")
+                div.col-md-2
+                div.col-md-8
+                    h2.mb-4 Навыки
+                    div.table-responsive
+                        table(class="table table-borderless")
+                            thead
+                                tr
+                                    th(scope="col") Языки
+                                    th(scope="col") Движки/Фреймворки
+                                    th(scope="col") Инструменты
+                            tbody
+                                - for (var i = 0; i < Math.max(maininfo.skills.languages.length, maininfo.skills.engines.length, maininfo.skills.tools.length); i++)
+                                    tr
+                                        td= maininfo.skills.languages[i]
+                                        td= maininfo.skills.engines[i]
+                                        td= maininfo.skills.tools[i]
+                div.col-md-2
+
+            a(class="anchor" name="gamejams")
+
+            div(class="row")
+                div.col-md-2
+                div.col-md-8
+                    hr
+                div.col-md-2
+
+            div(class="row d-print-none")
+                div.col-md-2
+                div.col-md-8
+                    h2.mb-4 Геймджемы
+                    div(class="row pt-3 mb-3")
+                        each gamejam in maininfo.gamejams
+                            div(class="pt-3 mb-3 col-md-6")
+                                div(class="gameproject card")
+                                    div(id="carousel"+carousel_index class="carousel slide carousel-fade mb-3" data-ride="carousel")
+                                        div.carousel-inner
+                                            each image, index in gamejam.images
+                                                - var active_text = "";
+                                                - active_text = (index == 0) ? "active" : "";
+                                                div(class="carousel-item " + active_text)
+                                                    a(href=image.detail class="d-flex justify-content-center" target="_blank")
+                                                        img(src=image.min class="d-block" alt=image.alt)
+                                        a(class="carousel-control-prev" href="#carousel"+carousel_index role="button" data-slide="prev")
+                                            span(class="carousel-control-prev-icon" aria-hidden="true")
+                                            span(class="sr-only") Previous
+                                        a(class="carousel-control-next" href="#carousel"+carousel_index role="button" data-slide="next")
+                                            span(class="carousel-control-next-icon" aria-hidden="true")
+                                            span(class="sr-only") Next
+                                    h3.text-center
+                                        img(src=gamejam.logo class="logo-icon")
+                                        span= gamejam.title
+                                    p.text-center= gamejam.subtitle
+                                    p !{gamejam.description}
+                                    p.text-center
+                                        each link in gamejam.links
+                                            a(class=link.button_class target="_blank" href=link.href) !{link.button_text}
+                            - carousel_index++;
+                div.col-md-2
+
+            a(class="anchor" name="projects")
+
+            div(class="row d-print-none")
+                div.col-md-2
+                div.col-md-8
+                    hr
+                div.col-md-2
+
+            div(class="row d-print-none")
+                div.col-md-2
+                div.col-md-8
+                    h2.mb-4 Личные проекты
+                    div.row.pt-3
+                        each project in maininfo.projects
+                            div(class="pt-3 mb-3 col-md-6")
+                                div(class="gameproject card")
+                                    div(id="carousel"+carousel_index class="carousel slide carousel-fade mb-3" data-ride="carousel")
+                                        div.carousel-inner
+                                            each image, index in project.images
+                                                - var active_text = "";
+                                                - active_text = (index == 0) ? "active" : "";
+                                                div(class="carousel-item " + active_text)
+                                                    a(href=image.detail class="d-flex justify-content-center" target="_blank")
+                                                        img(src=image.min class="d-block" alt=image.alt)
+                                        a(class="carousel-control-prev" href="#carousel"+carousel_index role="button" data-slide="prev")
+                                            span(class="carousel-control-prev-icon" aria-hidden="true")
+                                            span(class="sr-only") Previous
+                                        a(class="carousel-control-next" href="#carousel"+carousel_index role="button" data-slide="next")
+                                            span(class="carousel-control-next-icon" aria-hidden="true")
+                                            span(class="sr-only") Next
+                                    h3.text-center
+                                        img(src=project.logo class="logo-icon")
+                                        span= project.title
+                                    p.text-center= project.subtitle
+                                    p !{project.description}
+                                    p.text-center
+                                        each link in project.links
+                                            a(class=link.button_class target="_blank" href=link.href) !{link.button_text}
+                            - carousel_index++;
+                div.col-md-2
+
+
+            a(class="anchor d-print-none" name="info")
+
+            div(class="row d-print-none")
+                div.col-md-2
+                div.col-md-8
+                    hr
+                div.col-md-2
+
+            div(class="row d-print-none")
+                div.col-md-2
+                div.col-md-4.col-sm-12
+                    h2.mb-4 Контакты
+                    each contact in maininfo.contacts
+                        p=contact.title+": "
+                            a(href=contact.href)= contact.text
+                div(class="col-lg-3 col-md-12 col-sm-12 mb-2 d-flex justify-content-center position-relative d-sm-none d-md-none d-lg-block")
+                    p.text-center Ссылка на эту страницу
+                    img(src="dist/img/site_qr.png" class="qr-code")
+
+                div(class="col-lg-1 col-md-12 col-sm-12 mb-2 d-flex justify-content-center")
+                    a(href="#top" class="btn btn-primary") ↑ Наверх
+
+                div.col-md-2
+
+            div(class="row d-none d-print-block")
+                div.col-md-2
+                div.col-md-8
+                    h2.mb-4 О себе:
+                    p= maininfo.print_info.about_me
+                div.col-md-2
+
+            div(class="row d-none d-print-block")
+                div.col-md-2
+                div.col-md-8
+                    hr
+                div.col-md-2
+
+            div(class="row d-none d-print-block")
+                div.col-md-2
+                div.col-md-8
+                    h2.mb-4 Участие в проектах:
+                    div.row
+                        each project in maininfo.print_info.projects
+                            div(class="card mb-2 col-4")
+                                img(class="card-img-top" src=project.image alt="...")
+                                div.card-body
+                                    h5.card-title= project.title
+                                    h6(class="card-subtitle mb-2 text-muted")= project.subtitle
+                                    p.card-text= project.description
+
+                div.col-md-2
+
+            div.row.d-none.d-print-block
+                div.col-md-12
+                    br
+                    p Другие проекты и более подробная информация на
+                    a(href="https://kleeeeeer.github.io/maxnitalsgames/" target="_blank") https://kleeeeeer.github.io/maxnitalsgames/
+
+        script(src="dist/js/bundle.js")
