@@ -69,7 +69,8 @@
                     "title": "Почта"
                 }
         ],
-        "about_additional": "Если у вас есть предложения по работе или вы просто хотите задать вопрос - отправляйте сообщение на мой ящик <a href='mailto:maxnitals@yandex.ru'>maxnitals@yandex.ru</a> или телеграм <a href='https://t.me/kleeeeeer' target='_blank'>https://t.me/kleeeeeer</a>"
+        "about_additional": "Если у вас есть предложения по работе или вы просто хотите задать вопрос - отправляйте сообщение на мой ящик <a href='mailto:maxnitals@yandex.ru'>maxnitals@yandex.ru</a> или телеграм <a href='https://t.me/kleeeeeer' target='_blank'>https://t.me/kleeeeeer</a>",
+        "about_additional_examples": "Пример кода можно найти по <a href=\"https://github.com/KLEEEEEER/hey-escape/tree/master/Assets/__Scripts\" target=\"_blank\">этой ссылке</a> на <i class=\"fab fa-github\"></i> Github."
     },
     "print_info": {
         "name": "Сластин Максим Владимирович",
@@ -120,7 +121,7 @@
         ]
     },
     "background_info": {
-        "main_text": "После получения высшего образования, я 3 года работал веб-программистом. В своей работе использовал ООП и некоторые паттерны проектирования, поэтому считаю этот опыт важным и для своих текущих задач. Там же за это время получил опыт работы в команде и понял что такое работа в режиме SCRUM."
+        "main_text": "После получения высшего образования, я 3 года работал веб-программистом. В своей работе использовал <b>ООП</b> и некоторые <b>паттерны проектирования</b>, поэтому считаю этот опыт важным и для своих текущих задач. Там же за это время получил опыт работы в команде и понял что такое работа в режиме <b>SCRUM</b>."
     },
     "experiences": [
         {
@@ -154,7 +155,7 @@
             "Unity", "Xamarin", "DOTS (Мало опыта)"
         ],
         "tools": [
-            "Git", "Npm", "Trello", "Adobe Photoshop"
+            "Git", "Trello", "Adobe Photoshop"
         ]
     },
     "gamejams": [
