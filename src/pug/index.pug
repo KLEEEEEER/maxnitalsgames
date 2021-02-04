@@ -71,6 +71,7 @@ html
                 div.col-md-2
                 div.col-md-8
                     p !{maininfo.top_info.about_additional}
+                    p.info-box !{maininfo.top_info.about_additional_examples}
                 div.col-md-2
 
             a(class="anchor" name="background")
@@ -85,7 +86,42 @@ html
                 div.col-md-2
                 div.col-md-8
                     h2.mb-4 Бэкграунд
-                    p= maininfo.background_info.main_text
+                    p !{maininfo.background_info.main_text}
+
+                    a(class="anchor" name="skills")
+
+            div(class="row d-print-none")
+                div.col-md-2
+                div.col-md-8
+                    hr
+                div.col-md-2
+
+            div(class="row d-print-none")
+                div.col-md-2
+                div.col-md-8
+                    h2.mb-4 Навыки
+                    div.table-responsive
+                        table(class="table table-borderless")
+                            thead
+                                tr
+                                    th(scope="col") Языки
+                                    th(scope="col") Движки/Фреймворки
+                                    th(scope="col") Инструменты
+                            tbody
+                                - for (var i = 0; i < Math.max(maininfo.skills.languages.length, maininfo.skills.engines.length, maininfo.skills.tools.length); i++)
+                                    tr
+                                        td= maininfo.skills.languages[i]
+                                        td= maininfo.skills.engines[i]
+                                        td= maininfo.skills.tools[i]
+                div.col-md-2
+
+                div.col-md-2
+                div.col-md-8
+                    h5 Прочее:
+                    p В работе часто использую событийное программирование через #[b C# events] и #[b UnityEvents], а так же #[b Scriptable objects]
+                    p Использую такие паттерны проектирования как #[b State], #[b Observer] и #[b Command].
+                    p Так же был опыт добавления рекламных баннеров #[b AdMob] в своё приложение Rate Anything, но на Xamarin.
+                div.col-md-2
 
             a(class="anchor" name="experience")
 
@@ -133,39 +169,6 @@ html
                                 h5.card-title !{education.title}
                                 h5(class="card-subtitle mb-2 text-muted") !{education.subtitle}
                                 p.card-text !{education.text}
-                div.col-md-2
-
-            a(class="anchor" name="skills")
-
-            div(class="row d-print-none")
-                div.col-md-2
-                div.col-md-8
-                    hr
-                div.col-md-2
-
-            div(class="row d-print-none")
-                div.col-md-2
-                div.col-md-8
-                    h2.mb-4 Навыки
-                    div.table-responsive
-                        table(class="table table-borderless")
-                            thead
-                                tr
-                                    th(scope="col") Языки
-                                    th(scope="col") Движки/Фреймворки
-                                    th(scope="col") Инструменты
-                            tbody
-                                - for (var i = 0; i < Math.max(maininfo.skills.languages.length, maininfo.skills.engines.length, maininfo.skills.tools.length); i++)
-                                    tr
-                                        td= maininfo.skills.languages[i]
-                                        td= maininfo.skills.engines[i]
-                                        td= maininfo.skills.tools[i]
-                div.col-md-2
-
-                div.col-md-2
-                div.col-md-8
-                    p В работе часто использую такие паттерны проектирования как State, Observer и Command.
-                    p Так же был опыт добавления рекламных баннеров AdMob в своё приложение Rate Anything. 
                 div.col-md-2
 
             a(class="anchor" name="projects")
