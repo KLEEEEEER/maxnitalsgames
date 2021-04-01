@@ -52,11 +52,6 @@ html
                 div(class="d-none col-8 col-sm-6 col-md-4 col-lg-4 justify-content-md-end justify-content-center d-print-inline-block")
                     p.font-weight-bold.h4= maininfo.print_info.name
                     p
-                        <strong>Дата рождения:</strong> !{maininfo.print_info.birthday} <br>
-                        <strong>Гражданство:</strong> !{maininfo.print_info.citizenship} <br>
-                        span !{maininfo.print_info.residence} <br>
-                        <strong>Желаемая должность:</strong> !{maininfo.print_info.career_objective} <br>
-                        <strong>Желаемый уровень дохода:</strong> !{maininfo.print_info.desired_income_level} <br>
                         <strong>Контактная информация:</strong><br>
                         each contact in maininfo.print_info.contacts
                             span !{contact.name}:
