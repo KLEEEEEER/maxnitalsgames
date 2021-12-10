@@ -166,6 +166,24 @@ html
                                 p.card-text !{education.text}
                 div.col-md-2
 
+            a(class="anchor" name="work-projects")
+
+            div(class="row d-print-none")
+                div.col-md-2
+                div.col-md-8
+                    hr
+                div.col-md-2
+
+            div(class="row d-print-none")
+                div.col-md-2
+                div.col-md-8
+                    h2.mb-4 Рабочие проекты
+                    div.row.pt-3
+                        each work_project in maininfo.work_projects
+                            +projectBlock(work_project, carousel_index)
+                            - carousel_index++;
+                div.col-md-2
+
             a(class="anchor" name="projects")
 
             div(class="row d-print-none")

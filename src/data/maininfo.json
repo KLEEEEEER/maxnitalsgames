@@ -14,8 +14,12 @@
             "title": "Навыки"
         },
         {
+            "name": "work-projects",
+            "title": "Рабочие проекты"
+        },
+        {
             "name": "projects",
-            "title": "Проекты"
+            "title": "Личные проекты"
         },
         {
             "name": "gamejams",
@@ -98,25 +102,25 @@
         "about_me": "Могу уверенно назвать себя трудолюбивым и ответственным человеком. Люблю игры и люблю делать игры. Мне интересно развиваться в области их разработки и становиться более сильным разработчиком.",
         "projects": [
             {
-                "title": "Mind Escape (Народный джем)",
-                "image": "dist/img/mindescape2.png",
+                "title": "Helicopter mission",
+                "image": "dist/img/helicopter_mission_2.webp",
                 "subtitle": "Unity / C#",
-                "time": "1 неделя",
-                "description": "Высокая оценка в номинации \"Игра с лучшим исходным кодом на движке Unity\". В проекте использовался Timeline для постановки катсцен."
+                "time": "2 месяца",
+                "description": "Рельсовый шутер, в котором вы играете за солдата, стреляющего с вертолёта и прикрывающего союзных агентов, которые пытаются выбраться из вражеского здания полного врагов. Мною был написан весь геймплей игры."
             },
             {
-                "title": "Devoured (Ludum Dare 47)",
-                "image": "dist/img/Devoured2.jpg",
+                "title": "Flying fat man",
+                "image": "dist/img/flying_fat_man_2.webp",
                 "subtitle": "Unity / C#",
-                "time": "72 часа",
-                "description": "Игра сделана в команде из 5 человек. Победа в номинации \"гейм-дизайн\" на Digital Media Art Fest"
+                "time": "1 месяц",
+                "description": "Раннер, в котором игрок собирает жевачку, надувая сильнее шар из жевачки и взлетая выше, чтобы избежать опасных ловушек и дойти до финиша. Мною был написан весь геймплей игры."
             },
             {
-                "title": "Hey!Escape",
-                "image": "dist/img/heyescape2.png",
+                "title": "Archer 3D",
+                "image": "dist/img/archer3d_2.webp",
                 "subtitle": "Unity / C#",
-                "time": "6 месяцев",
-                "description": "Личный проект. Работа с 2D светом и спрайтовой анимацией. Использовались паттерны Машина состояний и Команда."
+                "time": "1.5 месяца",
+                "description": "Рельсовый шутер. В игре вы играете за робота с луком, который уничтожает других роботов и продвигается дальше по миру игры. Мною был написан весь геймплей игры."
             }
         ]
     },
@@ -125,8 +129,13 @@
     },
     "experiences": [
         {
+            "title": "",
+            "subtitle": "Октябрь 2021 — Настоящее время",
+            "text": "Разработка собственного проекта и обучение"
+        },
+        {
             "title": "Butcher's games",
-            "subtitle": "Февраль 2021 — Настоящее время",
+            "subtitle": "Февраль 2021 — Октябрь 2021",
             "text": "Разработка гиперказуальных игровых прототипов, разработка игровой логики по ТЗ, доработка предыдущих проектов компании."
         },
         {
@@ -305,6 +314,209 @@
                     "button_class": "playmarket-badge mr-2",
                     "href": "https://maxnitals.itch.io/yalp-drocer",
                     "button_text": "<img src=\"dist/img/itchio_badge.svg\">"
+                }
+            ]
+        }
+    ],
+    "work_projects": [
+        {
+            "title": "Archer 3D",
+            "subtitle": "Unity, C#",
+            "time": "1.5 месяца",
+            "description": "Рельсовый шутер. В игре вы играете за робота с луком, который уничтожает других роботов и продвигается дальше по миру игры. Мною был написан весь геймплей игры.",
+            "logo": "dist/img/archer3d_logo.webp",
+            "images": [
+                {
+                    "min": "dist/img/archer3d_1.webp",
+                    "detail": "dist/img/archer3d_1.webp",
+                    "alt": "..."
+                },
+                {
+                    "min": "dist/img/archer3d_2.webp",
+                    "detail": "dist/img/archer3d_2.webp",
+                    "alt": "..."
+                },
+                {
+                    "min": "dist/img/archer3d_3.webp",
+                    "detail": "dist/img/archer3d_3.webp",
+                    "alt": "..."
+                }
+            ],
+            "links": [
+            ]
+        },
+        {
+            "title": "Flying fat man",
+            "subtitle": "Unity, C#",
+            "time": "1 месяц",
+            "description": "Раннер, в котором игрок собирает жевачку, надувая сильнее шар из жевачки и взлетая выше, чтобы избежать опасных ловушек и дойти до финиша. Мною был написан весь геймплей игры.",
+            "logo": "dist/img/flying_fat_man_logo.webp",
+            "images": [
+                {
+                    "min": "dist/img/flying_fat_man_1.webp",
+                    "detail": "dist/img/flying_fat_man_1.webp",
+                    "alt": "..."
+                },
+                {
+                    "min": "dist/img/flying_fat_man_2.webp",
+                    "detail": "dist/img/flying_fat_man_2.webp",
+                    "alt": "..."
+                },
+                {
+                    "min": "dist/img/flying_fat_man_3.webp",
+                    "detail": "dist/img/flying_fat_man_3.webp",
+                    "alt": "..."
+                }
+            ],
+            "links": [
+                {
+                    "button_class": "playmarket-badge mr-2",
+                    "href": "https://play.google.com/store/apps/details?id=com.butchersgames.gumfly&hl=en_US&gl=US",
+                    "button_text": "<img alt='Доступно в Google Play' src='https://play.google.com/intl/en_us/badges/static/images/badges/ru_badge_web_generic.png'/>"
+                }
+            ]
+        },
+        {
+            "title": "Helicopter mission",
+            "subtitle": "Unity, C#",
+            "time": "2 месяца",
+            "description": "Рельсовый шутер, в котором вы играете за солдата, стреляющего с вертолёта и прикрывающего союзных агентов, которые пытаются выбраться из вражеского здания полного врагов. Мною был написан весь геймплей игры.",
+            "logo": "dist/img/helicopter_mission_logo.webp",
+            "images": [
+                {
+                    "min": "dist/img/helicopter_mission_1.webp",
+                    "detail": "dist/img/helicopter_mission_1.webp",
+                    "alt": "..."
+                },
+                {
+                    "min": "dist/img/helicopter_mission_2.webp",
+                    "detail": "dist/img/helicopter_mission_2.webp",
+                    "alt": "..."
+                },
+                {
+                    "min": "dist/img/helicopter_mission_3.webp",
+                    "detail": "dist/img/helicopter_mission_3.webp",
+                    "alt": "..."
+                },
+                {
+                    "min": "dist/img/helicopter_mission_4.webp",
+                    "detail": "dist/img/helicopter_mission_4.webp",
+                    "alt": "..."
+                }
+            ],
+            "links": [
+                {
+                    "button_class": "playmarket-badge mr-2",
+                    "href": "https://play.google.com/store/apps/details?id=com.butchersgames.helicoptermission&hl=en_US&gl=US",
+                    "button_text": "<img alt='Доступно в Google Play' src='https://play.google.com/intl/en_us/badges/static/images/badges/ru_badge_web_generic.png'/>"
+                }
+            ]
+        },
+        {
+            "title": "Animals Paper Craft 3D",
+            "subtitle": "Unity, C#",
+            "time": "2 недели",
+            "description": "Вырезайте, раскрашивайте и собирайте животных из бумаги. Мною был написан весь геймплей игры.",
+            "logo": "dist/img/animals_paper_craft_logo.webp",
+            "images": [
+                {
+                    "min": "dist/img/animals_paper_craft_1.webp",
+                    "detail": "dist/img/animals_paper_craft_1.webp",
+                    "alt": "..."
+                },
+                {
+                    "min": "dist/img/animals_paper_craft_2.webp",
+                    "detail": "dist/img/animals_paper_craft_2.webp",
+                    "alt": "..."
+                },
+                {
+                    "min": "dist/img/animals_paper_craft_3.webp",
+                    "detail": "dist/img/animals_paper_craft_3.webp",
+                    "alt": "..."
+                },
+                {
+                    "min": "dist/img/animals_paper_craft_4.webp",
+                    "detail": "dist/img/animals_paper_craft_4.webp",
+                    "alt": "..."
+                }
+            ],
+            "links": [
+                {
+                    "button_class": "playmarket-badge mr-2",
+                    "href": "https://play.google.com/store/apps/details?id=com.butchersgames.animalspapercraft3d&hl=en_US&gl=US",
+                    "button_text": "<img alt='Доступно в Google Play' src='https://play.google.com/intl/en_us/badges/static/images/badges/ru_badge_web_generic.png'/>"
+                }
+            ]
+        },
+        {
+            "title": "Force Race 3D",
+            "subtitle": "Unity, C#",
+            "time": "1 месяц",
+            "description": "В этом проекте я добавил несколько механик и помогал в полишинге и исправлении багов.",
+            "logo": "dist/img/force_race_3d_logo.webp",
+            "images": [
+                {
+                    "min": "dist/img/force_race_3d_1.webp",
+                    "detail": "dist/img/force_race_3d_1.webp",
+                    "alt": "..."
+                },
+                {
+                    "min": "dist/img/force_race_3d_2.webp",
+                    "detail": "dist/img/force_race_3d_2.webp",
+                    "alt": "..."
+                },
+                {
+                    "min": "dist/img/force_race_3d_3.webp",
+                    "detail": "dist/img/force_race_3d_3.webp",
+                    "alt": "..."
+                },
+                {
+                    "min": "dist/img/force_race_3d_4.webp",
+                    "detail": "dist/img/force_race_3d_4.webp",
+                    "alt": "..."
+                }
+            ],
+            "links": [
+                {
+                    "button_class": "playmarket-badge mr-2",
+                    "href": "https://play.google.com/store/apps/details?id=com.butchersgames.forcerace&hl=en_US&gl=US",
+                    "button_text": "<img alt='Доступно в Google Play' src='https://play.google.com/intl/en_us/badges/static/images/badges/ru_badge_web_generic.png'/>"
+                }
+            ]
+        },
+        {
+            "title": "People Rescue",
+            "subtitle": "Unity, C#",
+            "time": "2 недели",
+            "description": "В этом проекте я добавил несколько механик и помогал в полишинге и исправлении багов.",
+            "logo": "dist/img/people-rescue-logo.webp",
+            "images": [
+                {
+                    "min": "dist/img/people-rescue-1.webp",
+                    "detail": "dist/img/people-rescue-1.webp",
+                    "alt": "..."
+                },
+                {
+                    "min": "dist/img/people-rescue-2.webp",
+                    "detail": "dist/img/people-rescue-2.webp",
+                    "alt": "..."
+                },
+                {
+                    "min": "dist/img/people-rescue-3.webp",
+                    "detail": "dist/img/people-rescue-3.webp",
+                    "alt": "..."
+                },
+                {
+                    "min": "dist/img/people-rescue-4.webp",
+                    "detail": "dist/img/people-rescue-4.webp",
+                    "alt": "..."
+                }
+            ],
+            "links": [
+                {
+                    "button_class": "playmarket-badge mr-2",
+                    "href": "https://play.google.com/store/apps/details?id=com.butchersgames.forcerace&hl=en_US&gl=US",
+                    "button_text": "<img alt='Доступно в Google Play' src='https://play.google.com/intl/en_us/badges/static/images/badges/ru_badge_web_generic.png'/>"
                 }
             ]
         }
