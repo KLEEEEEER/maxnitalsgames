@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack",
-    "watch": "webpack --watch --progress"
+    "watch": "webpack --watch --progress",
+    "buildjson": "node buildjson --experimental-modules"
   },
   "keywords": [],
   "author": "",
@@ -29,6 +29,8 @@
     "@fortawesome/fontawesome-free": "^5.14.0",
     "bootstrap": "^5.0.0-alpha1",
     "bootstrap-icons": "^1.0.0",
-    "pug": "^3.0.0"
+    "buildjson": "file:buildjson",
+    "pug": "^3.0.2",
+    "sqlite3": "^5.0.2"
   }
 }
