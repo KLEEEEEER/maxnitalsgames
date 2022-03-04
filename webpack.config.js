@@ -63,6 +63,7 @@ module.exports = {
           "darkThemeScript": fs.readFileSync("./src/scripts/CheckDarkTheme.js", 'utf-8')
       },
       inject: false,
+      minify: false,
     })
   ],
 };
