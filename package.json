@@ -6,7 +6,7 @@
   "scripts": {
     "build": "webpack",
     "watch": "webpack --watch --progress",
-    "buildjson": "node buildjson --experimental-modules"
+    "buildjson": "node databaseToJson.js"
   },
   "keywords": [],
   "author": "",

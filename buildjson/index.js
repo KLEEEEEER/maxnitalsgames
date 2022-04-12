@@ -276,7 +276,7 @@ function FillPersonalProjectLinks(db, project) {
 function FillGamejams(db, json) {
     return new Promise((resolve, reject) => {
         var projects = [];
-        db.each("SELECT * FROM gamejams", function(err, project_row) {
+        db.each("SELECT * FROM gamejams ORDER BY \"order\" DESC", function(err, project_row) {
             projects.push(project_row);
         },
         function(err, count){
