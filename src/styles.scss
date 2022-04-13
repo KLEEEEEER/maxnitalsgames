@@ -5,6 +5,8 @@ $primary: #37792f;
 $font-family-base: 'Manrope', sans-serif;
 $headings-font-family: 'Jost', sans-serif;
 
+$border-color: #ededed;
+$dark-theme-border-color: #525252;
 $dark-theme-bg: #1b1b1b;
 $dark-theme-card-bg: #3a3a3a;
 $dark-theme-button-bg: #ccd5de;
@@ -146,6 +148,9 @@ a.anchor {
     .navbar-toggler {
         background-color: #fff;
     }
+    .carousel-inner {
+        border: 2px solid $dark-theme-border-color;
+    }
 }
 
 .list-group.social-icons {
@@ -157,6 +162,10 @@ a.anchor {
     }
 }
 
+.carousel-inner {
+    border: 2px solid $border-color;
+    border-radius: 6px;
+}
 .carousel-item {
     img {
         max-height: 220px;

@@ -178,7 +178,7 @@ html
                 div.col-md-2
                 div.col-md-8
                     h2.mb-4 Рабочие проекты
-                    div.row.pt-3
+                    div.row.pt-3.projects-list
                         each work_project in maininfo.work_projects
                             +projectBlock(work_project, carousel_index)
                             - carousel_index++;
@@ -196,7 +196,7 @@ html
                 div.col-md-2
                 div.col-md-8
                     h2.mb-4 Личные проекты
-                    div.row.pt-3
+                    div.row.pt-3.projects-list
                         each project in maininfo.projects
                             +projectBlock(project, carousel_index)
                             - carousel_index++;
@@ -214,7 +214,7 @@ html
                 div.col-md-2
                 div.col-md-8
                     h2.mb-4 Геймджемы
-                    div(class="row pt-3 mb-3")
+                    div(class="row pt-3 mb-3 projects-list")
                         each gamejam in maininfo.gamejams
                             +projectBlock(gamejam, carousel_index)
                             - carousel_index++;
