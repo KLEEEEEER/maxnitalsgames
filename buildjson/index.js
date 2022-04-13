@@ -101,7 +101,7 @@ function FillTopInfo(db, json) {
 
 function FillTopInfoLinkIcons(db, json) {
     return new Promise((resolve, reject) => {
-        db.all("SELECT * FROM top_link_icons", function(err, rows) {
+        db.all("SELECT * FROM top_link_icons WHERE active = 1", function(err, rows) {
             json.top_info.link_icons = rows;
             resolve(json);
         });
@@ -200,7 +200,7 @@ function FillOgInfo(db, json) {
 
 function FillContacts(db, json) {
     return new Promise((resolve, reject) => {
-        db.all("SELECT * FROM contacts", function(err, rows) {
+        db.all("SELECT * FROM contacts WHERE active = 1", function(err, rows) {
             json.contacts = rows;
             resolve(json);
         });
