@@ -1,5 +1,7 @@
-<template>
-    <TopNavBar :maininfo="maininfo"/>
+<template lang="pug">
+TopNavBar(:maininfo="maininfo")
+    div.container
+        div.row.first-row
 </template>
 
 <script>
