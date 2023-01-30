@@ -3,11 +3,14 @@ const fs = require('fs');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const { VueLoaderPlugin } = require('vue-loader');
 
 module.exports = {
-  entry: {//['./src/index.js', './src/styles.scss'],
-      index: ['./src/index.js']
-  },
+  mode: 'development',
+  // entry: {//['./src/index.js', './src/styles.scss'],
+  //     index: ['./src/index.js']
+  // },
+  entry: './src/index.js',
   output: {
     filename: 'js/bundle.js',
     path: path.resolve(__dirname, 'dist'),
@@ -16,7 +19,7 @@ module.exports = {
       rules: [
           {
               test: /\.pug$/,
-              use: ['pug-loader']
+              use: ['vue-pug-loader']
           },
           {
             test: /\.(scss|png|jpe?g)$/,
@@ -43,10 +46,15 @@ module.exports = {
                 //'resolve-url-loader',
                 'sass-loader',
             ]
+          },
+          {
+            test: /\.vue$/,
+            loader: 'vue-loader'
           }
       ]
   },
   plugins: [
+    new VueLoaderPlugin(),
     new MiniCssExtractPlugin({
       filename: 'css/styles.css',
     }),
@@ -56,14 +64,7 @@ module.exports = {
         ],
     }),
     new HtmlWebpackPlugin({
-      template: path.join(__dirname, './src/pug/index.pug'),
-      filename: path.join(__dirname, './index.html'),
-      templateParameters: {
-          "maininfo": require("./src/data/maininfo.json"),
-          "darkThemeScript": fs.readFileSync("./src/scripts/CheckDarkTheme.js", 'utf-8')
-      },
-      inject: false,
-      minify: false,
+      template: "./src/webpackTemplates/index.html"
     })
   ],
 };
