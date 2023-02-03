@@ -11,17 +11,34 @@ div(class="row d-print-none")
     div.col-md-2
     div.col-md-8
         h2.mb-4 Личные проекты
-        div.row.pt-3.projects-list
+        div.row.pt-3.projects-list(v-if="isShowingAll == true")
             each project in maininfo.projects
                 ProjectCard(:project="project")
+        div.row.pt-3.projects-list(v-else)
+            each project in maininfo.projects.slice(0, 4)
+                ProjectCard(:project="project")
     div.col-md-2
+
+ShowAllButton(@onShowingChanged="showingChanged")
 </template>
 
 <script>
     import ProjectCard from './cards/ProjectCard.vue';
+    import ShowAllButton from './elements/ShowAllButton.vue';
     export default {
+        data() {
+            return {
+                isShowingAll: false
+            }
+        },
+        methods: {
+            showingChanged(value) {
+                this.isShowingAll = value;
+            }
+        },
         components: {
-            ProjectCard
+            ProjectCard,
+            ShowAllButton
         },
         props: ['maininfo'],
     };

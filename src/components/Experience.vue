@@ -26,12 +26,7 @@ div(class="row")
     div.col-md-8
         h2.mb-4 Опыт работы:
         each experience in maininfo.experiences
-            ExperienceCard(:title="experience.title", :subtitle="experience.subtitle", :text="experience.text")
-            //- div.card.mb-2
-            //-     div.card-body
-            //-         h5.card-title= experience.title
-            //-         h5(class="card-subtitle mb-2 text-muted")= experience.subtitle
-            //-         p.card-text= experience.text
+            ExperienceCard(:place="experience")
     div.col-md-2
 
 div(class="row d-print-none")
@@ -45,12 +40,7 @@ div(class="row")
     div.col-md-8
         h2.mb-4 Образование:
         each education in maininfo.educations
-            ExperienceCard(:title="education.title", :subtitle="education.subtitle", :text="education.text")
-            //- div.card.mb-2
-            //-     div.card-body
-            //-         h5.card-title {{education.title}}
-            //-         h5(class="card-subtitle mb-2 text-muted") {{education.subtitle}}
-            //-         p.card-text {{education.text}}
+            ExperienceCard(:place="education")
             div.col-md-2
 </template>
 
