@@ -21,9 +21,9 @@ nav(class="navbar navbar-expand-lg navbar-light bg-light sticky-top")
             li.nav-item
                 div(class="position-relative d-inline-block dark-theme-toggle-wrapper ml-5")
                     i(class="fas fa-sun position-absolute day-mode-icon")
-                    a(href="#" id="dark_theme_toggle_off" target="_blank")
+                    a(v-if="isDarkmode == 0" v-on:click.prevent="toggleDarkmode" href="#" target="_blank")
                         i(class="fas fa-toggle-off")
-                    a(href="#" id="dark_theme_toggle_on" target="_blank")
+                    a(v-else v-on:click.prevent="toggleDarkmode" href="#" target="_blank")
                         i(class="fas fa-toggle-on")
                     i(class="fas fa-moon position-absolute night-mode-icon")
 </template>
@@ -31,5 +31,37 @@ nav(class="navbar navbar-expand-lg navbar-light bg-light sticky-top")
 <script>
     export default {
         props: ['maininfo'],
+        data() {
+            return {
+                isDarkmode: 0 
+            }
+        },
+        beforeMount() {
+            if (localStorage.dark_theme) {
+                console.log("beforeMount");
+                this.isDarkmode = localStorage.dark_theme;
+                console.log("Now darkmode is " + this.isDarkmode);
+
+                if (this.isDarkmode == 0) {
+                    document.body.classList.remove('dark-theme');
+                } else {
+                    document.body.classList.add('dark-theme');
+                }
+            }
+        },
+        methods: {
+            toggleDarkmode() {
+                console.log("PRessed");
+                this.isDarkmode = (this.isDarkmode == 0) ? 1 : 0;
+                localStorage.dark_theme = this.isDarkmode;
+                console.log("Now darkmode is " + this.isDarkmode);
+
+                if (this.isDarkmode == 0) {
+                    document.body.classList.remove('dark-theme');
+                } else {
+                    document.body.classList.add('dark-theme');
+                }
+            }
+        }
     };
 </script>
