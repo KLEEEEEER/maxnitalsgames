@@ -24,9 +24,18 @@ div(class="row d-none d-print-block")
 div(class="row")
     div.col-md-2
     div.col-md-8
-        h2.mb-4 Опыт работы:
-        each experience in maininfo.experiences
-            ExperienceCard(:place="experience")
+        div.row
+            div.col-md-6
+                h2.mb-4 Опыт работы:
+            div.col-md-6.d-flex.justify-content-end
+                h2.mb-4
+                    ToggleButton(@onToggleChanged="webToggleChanged" :toggleValue="isWebAvailable")
+        div(v-if="isWebAvailable == true")
+            each experience in maininfo.experiences
+                ExperienceCard(:place="experience")
+        div(v-else)
+            each experience in maininfo.experiences.slice(0, 1)
+                ExperienceCard(:place="experience")
     div.col-md-2
 
 div(class="row d-print-none")
@@ -46,9 +55,21 @@ div(class="row")
 
 <script>
     import ExperienceCard from './cards/ExperienceCard.vue';
+    import ToggleButton from './elements/ToggleButton.vue';
     export default {
+        data() {
+            return {
+                isWebAvailable: false
+            }
+        },
         components: {
-            ExperienceCard
+            ExperienceCard,
+            ToggleButton
+        },
+        methods: {
+            webToggleChanged() {
+                this.isWebAvailable = !this.isWebAvailable;
+            }
         },
         props: ['maininfo'],
     };
