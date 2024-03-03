@@ -22,10 +22,6 @@ nav(class="navbar navbar-expand-lg navbar-light bg-light sticky-top")
                 div(class="position-relative d-inline-block dark-theme-toggle-wrapper ml-5")
                     i(class="fas fa-sun position-absolute day-mode-icon")
                     ToggleButton(@onToggleChanged="darkmodeToggleChanged" :toggleValue="isDarkmode")
-                    //- a(v-if="isDarkmode == 0" v-on:click.prevent="toggleDarkmode" href="#" target="_blank")
-                    //-     i(class="fas fa-toggle-off")
-                    //- a(v-else v-on:click.prevent="toggleDarkmode" href="#" target="_blank")
-                    //-     i(class="fas fa-toggle-on")
                     i(class="fas fa-moon position-absolute night-mode-icon")
 </template>
 

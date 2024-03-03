@@ -1,16 +1,16 @@
 <template lang="pug">
 div(class="pt-3 mb-3 col-md-6")
     div(class="gameproject card")
-        div(id="carousel"+carousel_index class="carousel slide carousel-fade mb-3" data-ride="carousel")
+        div(id="carousel"+this.id class="carousel slide carousel-fade mb-3" data-ride="carousel")
             div.carousel-inner
                 each image, index in project.images
                     div(class="carousel-item " + active_text)
                         a(:href="image.detail" class="d-flex justify-content-center" target="_blank")
                             img(:src="image.min" class="d-block" :alt="image.alt")
-            a(class="carousel-control-prev" href="#carousel"+carousel_index role="button" data-slide="prev")
+            a(class="carousel-control-prev" href="#carousel"+this.id role="button" data-slide="prev")
                 span(class="carousel-control-prev-icon" aria-hidden="true")
                 span(class="sr-only") Previous
-            a(class="carousel-control-next" href="#carousel"+carousel_index role="button" data-slide="next")
+            a(class="carousel-control-next" href="#carousel"+this.id role="button" data-slide="next")
                 span(class="carousel-control-next-icon" aria-hidden="true")
                 span(class="sr-only") Next
         h3.text-center
@@ -31,5 +31,14 @@ div(class="pt-3 mb-3 col-md-6")
 <script>
     export default {
         props: ['project'],
+        data() {
+            return {
+                id: ''
+            }
+        },
+        mounted() {
+            this.id = this.$carouselIndex;
+            this.$carouselIndex++;
+        }
     };
 </script>
